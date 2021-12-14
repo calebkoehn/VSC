@@ -18,7 +18,8 @@
     background-color: #00d1b2;
     color: white;
     border-radius: 50%;
-    border: none;
+    border:none;
+    font-size: x-large;
 }
 .Create-Account {
     width: 200px;
