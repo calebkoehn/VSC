@@ -14,7 +14,7 @@
             Dojonary
             </h1>
             <input type="text" placeholder="Search...">        
-            <button>Login</button>
+            <button onclick="LogOff(this)">Login</button>
         </div>                    
         <div id="body">
             <div id="Left">
@@ -23,7 +23,7 @@
                         <h1>ninja</h1>
                         <p><em>noun</em></p>
                         <p>Plural: ninjas</p>
-                        <button>13 likes</button>
+                        <button onclick="alert('Ninja was liked')">13 likes</button>
                     </div>
                     <div class="ninja1Right">
                         <h3>A practitioner skilled in the<br>
@@ -36,7 +36,7 @@
                         <h1>ninja</h1>
                         <p><em>noun</em></p>
                         <p>Plural: ninjas</p>
-                        <button>37 likes</button>
+                        <button onclick="alert('Ninja was liked')">37 likes</button>
                     </div>
                     <div class="ninja2Right">
                         <h3>A <a href="#">programmer</a> who breaks<br>
@@ -48,10 +48,11 @@
             <div id="Right">
                 <h1>Dojonary is <br>defined by YOU
                 </h1>
-                <button>Add Definition</button>
+                <button onclick="hide(this)">Add Definition</button>
 
             </div>
         </div>    
     </div>
+    <script src="ButtonClicker.js"></script>
 </body>
 </html>
