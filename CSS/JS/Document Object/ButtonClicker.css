@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+#main{
+    width: 75%;
+    margin: 0px auto;
+}
+
+#navBar{
+    height: 75px;
+    width: 100%;
+    margin: 0px auto;
+    background-color: silver;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+
+#navBar>button{
+    height: 30px;
+    width: 80px;
+    background-color: rgb(40, 90, 226);
+    font-weight: bold;
+    font-size: larger;
+}
+#navBar>input[type=text]{
+    padding: 6px;
+    width: 35%;
+    border: 2px solid black;
+    font-size: 17px;
+}
+
+#body{
+    display: flex;
+}
+#Left{
+    height: 425px;
+    width: 65%;
+    margin-top: 25px;
+}
+#ninja1{
+    height: 200px;
+    width: 95%;
+    border: 5px solid black;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#ninja2{
+    height: 200px;
+    width: 95%;
+    border: 5px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#Right{
+    height: 150px;
+    width: 35%;
+    margin-top: 25px;
+    padding-left: 25px;
+    border: 5px solid black;
+    text-align: center;
+}
+#Right>button{
+    height: 40px;
+    width: 200px;
+    background-color: rgb(44, 161, 44);
+    font-weight: bold;
+    font-size: x-large;
+    margin-top: 10px;
+}
+.ninja1Left {
+    height: 100%;
+    width: 25%;
+    margin: 25px;
+}
+.ninja1Left>button{
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: rgb(243, 227, 6);
+}
+.ninja1Left>h1{
+    margin-bottom: 10px;
+}
+.ninja1Left>p{
+    margin-bottom: 15px;
+}
+.ninja1Right{
+    height: 80%;
+    width: 60%;
+    margin-top: 10%;
+}
+.ninja2Left {
+    height: 100%;
+    width: 25%;
+    margin: 25px;
+}
+.ninja2Left>button{
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: rgb(243, 227, 6);
+}
+.ninja2Left>h1{
+    margin-bottom: 10px;
+}
+.ninja2Left>p{
+    margin-bottom: 15px;
+}
+.ninja2Right{
+    height: 80%;
+    width: 60%;
+    margin-top: 10%;
+}
