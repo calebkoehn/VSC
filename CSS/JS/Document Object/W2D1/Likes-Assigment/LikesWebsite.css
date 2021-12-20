@@ -1,0 +1,136 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#body{
+    width: 75%;
+    margin: 0px auto;
+}
+
+#navBar{
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+}
+#main{
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+}
+#feedLeft{
+    height: 300px;
+    width: 30%;
+}
+#feedRight{
+    height: 1000px;
+    width: 70%;
+}
+#feedRight>h1{
+    text-align: center;
+}
+#profile{
+    height: 275px;
+    margin-top: 60px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#profile>img{
+    height: 75px;
+    width: 75px;
+    margin-top: 25px;
+}
+#contentBox1{
+    width: 70%;
+    height: 150px;
+    margin-top: 3%;
+    margin-left: auto;
+    border: 3px solid black;
+    margin-bottom: 25px;
+}
+#Box1Top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Box1Bottom{
+    height: 50%;
+    position: relative;
+    padding-left: 10px;
+}
+#Box1Top>button{
+    height: 30px;
+    width: 55px;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#contentBox2{
+    width: 100%;
+    height: 150px;
+    margin-top: 3%;
+    border: 3px solid black;
+}
+
+#Box2Top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Box2Bottom{
+    height: 50%;
+    position: relative;
+    padding-left: 10px;
+}
+#Box2Top>button{
+    height: 30px;
+    width: 55px;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+    font-size: large;
+}
+
+#contentBox3{
+    width: 100%;
+    height: 150px;
+    margin-top: 3%;
+    border: 3px solid black;
+}
+
+#Box3Top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Box3Bottom{
+    height: 50%;
+    position: relative;
+    padding-left: 10px;
+}
+#Box3Top>button{
+    height: 30px;
+    width: 55px;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+    font-size: large;
+}
