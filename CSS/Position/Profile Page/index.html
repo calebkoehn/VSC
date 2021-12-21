@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <!-- navbar -->
+
     <div class="nav">
         <div class="flex-container">
             <h1 class="nav-title">Profile</h1>
@@ -23,27 +23,25 @@
         </div>
     </div>
 
-    <!-- main -->
     <div class="flex-container main">
 
-        <!-- 2/3 width column -->
+
         <div class="col-2">
 
-            <!-- user info card -->
+            
             <div class="card user-card">
                 <div class="card-header">
                     <img src="images/jane-m.jpg" alt="jane" class="avatar-m">
                 </div>
                 <div class="card-body">
-                    <h1>Jane Doe</h1>
+                    <h1 id="username">Jane Doe</h1>
                     <h3><img src="icons/map-marker.png" alt="pin" class="icon-s"> Seattle</h3>
                     <p>Developer | Engineer | Problem Solver<br>
                     Master of shadows and the Internet!</p>
-                    <p><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
+                    <p onclick="edit()"><a href="#"><img src="icons/gear.png" alt="gear" class="icon-s"> edit profile</a></p>
                 </div>
             </div>
 
-            <!-- user education card -->
             <div class="card">
                 <div class="card-header">
                     <h3>Education</h3>
@@ -57,43 +55,41 @@
 
         </div>
 
-        <!-- 1/3 width column -->
         <div class="col-1">
 
-            <!-- connection requests card -->
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">2</span>
+                    <span class="badge" id="requests">2</span>
                     <h3>Connection Requests</h3>
                 </div>
                 <ul class="card-list">
-                    <li class="card-list-item">
+                    <li class="card-list-item" id="request-1">
                         <span>
                             <img src="images/todd-s.jpg" alt="todd" class="avatar-s">
                             Todd E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick='accept("#request-1")'>
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick='ignore("#request-1")'>
                         </span>
                     </li>
-                    <li class="card-list-item">
+                    <li class="card-list-item" id="request-2">
                         <span>
                             <img src="images/phil-s.jpg" alt="phil" class="avatar-s">
                             Phil E
                         </span>
                         <span>
-                            <img src="icons/accept-circle.png" alt="accept" class="icon">
-                            <img src="icons/close-circle.png" alt="close" class="icon">
+                            <img src="icons/accept-circle.png" alt="accept" class="icon" onclick='accept("#request-2")'>
+                            <img src="icons/close-circle.png" alt="close" class="icon" onclick='ignore("#request-2")'>
                         </span>
                     </li>
                 </ul>
             </div>
 
-            <!-- your connections card -->
+
             <div class="card">
                 <div class="card-header">
-                    <span class="badge">500+</span>
+                    <span class="badge" id="connections">498</span>
                     <h3>Your Connections</h3>
                 </div>
                 <ul class="card-list">
