@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="nav">
+        <img src="assests/leaf.png" alt="logo" class="logo">
+        <h1 class="nav-title"> EasyBay</h1>
+        <input type="text" placeholder="Search for anything"> 
+        <div class="navbuttons">
+            <h2>Sign In</h2>
+            <img src="assests/cart-dark.png" alt="cart icon" onclick="cart()" class="cart">
+        </div>
+    </div>
+    <div id="navCategories">
+        <h2>Aeonium</h2>
+        <h2>Andormischus</h2>
+        <h2>Agave</h2>
+        <h2>Aloe</h2>
+        <h2>Anacampseros</h2>
+        <h2>Aristaloe</h2>
+        <h2>More...</h2>
+    </div>
+
+    <div id="main">
+        <h1>Your Source for Serious Succulent Specialties</h1>
+        <div id="middle">
+            <div class="middleLeft">
+                <div id="middleLeftText">
+                    <h1>Discover succulent varieties one pot or rack at a time!<br> Discover <img src="assests/arrow-light.png" alt="arrow" class="arrow"> 
+                    </h1>
+                </div>
+                <div id="middleLeftImg">
+                    <img id="plantSwap" onmouseover="swap(this)" onmouseout="swapBack(this)" src="assests/succulents-1.jpg" alt="succulents" >
+                </div>
+            </div>
+            <div class="middleRight">
+                    <img src="assests/aloe-m.jpg" alt="aloe plant">
+                <div id="middleRightButton">
+                    <h2>Soothing aloe<img src="assests/arrow-light.png" alt="arrow" class="arrow"></h2>
+                </div>
+            </div>
+        </div>
+        <div id="bottom">
+            <div id="plant">
+                <div class="plantBox">
+                    <div class="topPlantBox">
+                        <img src="assests/aeonium-s.jpg" alt="Aeonium" class="bottomPlantImg">
+                    </div>
+                    <div class="bottomPlantBox">
+                            <h4>Aeonium</h4>
+                    </div>
+                </div>
+                <div class="plantBox">
+                    <div class="topPlantBox">
+                        <img src="assests/aloe-s.jpg" alt="Aloe" class="bottomPlantImg">
+                    </div>
+                    <div class="bottomPlantBox">
+                            <h4>Aloe</h4>
+                    </div>
+                </div>
+                <div class="plantBox">
+                    <div class="topPlantBox">
+                        <img src="assests/cactus-s.jpg" alt="Cactus" class="bottomPlantImg">
+                    </div>
+                    <div class="bottomPlantBox">
+                            <h4>Cactus</h4>
+                    </div>
+                </div>
+                <div class="plantBox">
+                    <div class="topPlantBox">
+                        <img src="assests/echeveria-s.jpg" alt="Echeveria" class="bottomPlantImg">
+                    </div>
+                    <div class="bottomPlantBox">
+                            <h4>Echeveria</h4>
+                    </div>
+                </div>
+                <div class="plantBox">
+                    <div class="topPlantBox">
+                        <img src="assests/sedum-s.jpg" alt="Sedum" class="bottomPlantImg">
+                    </div>
+                    <div class="bottomPlantBox">
+                            <h4>Sedum</h4>
+                    </div>
+                </div>
+                <div class="plantBox">
+                    <div class="topPlantBox">
+                        <img src="assests/sempervivum-s.jpg" alt="Sempervivum" class="bottomPlantImg">
+                    </div>
+                    <div class="bottomPlantBox">
+                            <h4>Sempervivum</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="cookie-policy">
+            <img src="assests/alert-dark.png" alt="alert">
+            <div class="text">
+                <p> This site makes use of third-party cookies, by clicking "I accept" you agree to the terms outlined in our <a href="#">cookie policy.</a></p>
+            </div>
+            <button class="btn" onclick="accept()"> I Accept</button>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
