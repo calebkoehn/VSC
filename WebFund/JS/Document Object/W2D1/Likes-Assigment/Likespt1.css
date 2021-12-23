@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#contentBox{
+    width: 30%;
+    height: 150px;
+    margin-left: 10%;
+    margin-top: 3%;
+    border: 3px solid black;
+}
+#Top{
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Bottom{
+    height: 50%;
+    position: relative;
+}
+#Top>button{
+    height: 30px;
+    width: 55px;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 3px 3px black;
+    font-weight: bold;
+    font-size: large;
+}

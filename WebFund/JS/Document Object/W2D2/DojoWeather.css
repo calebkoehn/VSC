@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+#nav{
+    height: 75px;
+    width: 100%;
+    background-color: lightblue;
+}
+
+#main{
+    width: 80%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+#header{
+    height: 100px;
+    width: 100%;
+    border-bottom: 5px solid black;
+}
+
+#body{
+    width: 100%;
+    height: 100%;
+}
+
+#cookieAlert{
+    width: 80%;
+    height: 125px;
+    margin-left: 10%;
+    border: 3px solid black;
+    position: fixed;
+}

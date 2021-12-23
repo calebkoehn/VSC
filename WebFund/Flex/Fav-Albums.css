@@ -1,0 +1,43 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#container{
+    background-color: solid solid rgb(220, 0, 0);
+    width: 60%;
+    height: 100vh;
+    margin: 0px auto;
+    border-left: 4px solid rgb(99, 0, 0);
+    border-right: 4px solid rgb(99, 0, 0);
+}
+
+h1 {
+    text-align: center;
+}
+#albumList{
+    width: 90%;
+    margin: 0px auto;
+    border: 1px solid black;
+    height: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+    padding-top: 25px;
+}
+
+.albumBox{
+    background-color: black;
+    height: 250px;
+    width: 200px;
+    margin: 0px 10px;
+    padding: 6px;
+    text-align: center;
+
+}
+.albumBox > img{
+    width: 100%;
+}
+h2,h3{
+    color: pink;
+}

@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(216, 112, 147, 0.212);
+}
+
+#navBar{
+    height: 100px;
+    width: 100%;
+    background-color: darkturquoise;
+}
