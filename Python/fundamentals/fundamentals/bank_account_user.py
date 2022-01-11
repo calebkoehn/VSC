@@ -18,8 +18,7 @@ class BankAccount:
         return self
     
     def display_account_info(self):
-        print(f"Balance: {self.balance}")
-        return self
+        return f"{self.balance}"
 
     def yield_interest(self):
         if self.balance > 0:
@@ -27,15 +26,19 @@ class BankAccount:
         return self
 
 class User:
-    def __init__(self, name, email):
+    def __init__(self, name,):
         self.name = name
-        self.email = email
-        self.account = BankAccount(int_rate=0.02, balance=0)	
+        self.account = {
+            "checking" : BankAccount(.04,1500),
+            "savings" : BankAccount(.02,4500)
+        }
 
+    def display_user_balance(self):
+        print(f"User: {self.name}, Checking Balance: {self.account['checking'].display_account_info()}")
+        print(f"User: {self.name}, Savings Balance: {self.account['savings'].display_account_info()}")
+        return self
 
+caleb = User("Caleb")
 
-savings = BankAccount(.04,1500)
-checking = BankAccount(.02,4500)
-
-savings.deposit(100).deposit(75).deposit(400).withdraw(800).yield_interest().display_account_info()
-checking.deposit(750).deposit(100).deposit(6500).withdraw(2300).yield_interest().display_account_info()
+caleb.account['checking'].deposit(250)
+caleb.display_user_balance()
