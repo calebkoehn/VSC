@@ -21,7 +21,7 @@ class BankAccount:
         print(f"Balance: {self.balance}")
         return self
 
-    def yeild_interest(self):
+    def yield_interest(self):
         if self.balance > 0:
             self.balance += (self.balance * self.int_rate)
         return self
@@ -32,9 +32,9 @@ class BankAccount:
             account.display_account_info()
 
 caleb = BankAccount(.04,1500)
-john = BankAccount(.02,4000)
+john = BankAccount(.02,4500)
 
-caleb.deposit(100).deposit(75).deposit(400).withdraw(800).yeild_interest().display_account_info()
-john.deposit(750).deposit(100).deposit(6500).withdraw(2300).yeild_interest().display_account_info()
+caleb.deposit(100).deposit(75).deposit(400).withdraw(800).yield_interest().display_account_info()
+john.deposit(750).deposit(100).deposit(6500).withdraw(2300).yield_interest().display_account_info()
 
 BankAccount.print_all_accounts()
