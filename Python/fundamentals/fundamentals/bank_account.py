@@ -1,43 +1,40 @@
 class BankAccount:
-
-    def __init__(self, int_rate, balance): 
-        self.int_rate = Rate
-        self.balance = Balance
+    accounts = []
+    def __init__(self,int_rate,balance):
+        self.int_rate = int_rate
+        self.balance = balance
+        BankAccount.accounts.append(self)
 
     def deposit(self, amount):
-        self.amount += amount
+        self.balance += amount
         return self
 
-    def withdraw(self, amount):
-        self.amount -= amount
-
+    def withdraw(self,amount):
+        if(self.balance - amount) >= 0:
+            self.balance -= amount
+        else:
+            print("Insufficient Funds: Charging a $5 fee")
+            self.balance -= 5
+        return self
+    
     def display_account_info(self):
-        print(f"User: {self.name}, Balance: {self.amount}")
-
-
-    def yield_interest(self):
-        self.amount = 0.01
-
-class User:
-
-    def __init__(self, name):
-        self.name = name
-        self.amount = 0
-
-    def make_deposit(self, amount):
-        self.amount += amount
+        print(f"Balance: {self.balance}")
         return self
 
-    def make_withdrawal(self,amount):
-        self.amount -= amount
+    def yeild_interest(self):
+        if self.balance > 0:
+            self.balance += (self.balance * self.int_rate)
         return self
 
-    def display_account_balance(self):
-        print(f"User: {self.name}, Balance: {self.amount}")
+    @classmethod
+    def print_all_accounts(cls):
+        for account in cls.accounts:
+            account.display_account_info()
 
+caleb = BankAccount(.04,1500)
+john = BankAccount(.02,4000)
 
-caleb = User("Caleb")
-john = User("John Doe")
+caleb.deposit(100).deposit(75).deposit(400).withdraw(800).yeild_interest().display_account_info()
+john.deposit(750).deposit(100).deposit(6500).withdraw(2300).yeild_interest().display_account_info()
 
-caleb.make_deposit(100).make_deposit(100).make_deposit(100).make_withdrawal(50).yield_interest(1).display_account_balance()
-john.make_deposit(500).make_deposit(750).make_withdrawal(125).make_withdrawal(50).make_withdrawal(100).make_withdrawal(25).display_account_balance()
+BankAccount.print_all_accounts()
