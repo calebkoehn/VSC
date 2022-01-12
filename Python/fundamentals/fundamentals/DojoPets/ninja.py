@@ -1,31 +1,4 @@
-
-class Pet:
-
-    def __init__(self, name , type, tricks, noise):
-        self.name = name
-        self.type = type
-        self.tricks = tricks
-        self.health = 100
-        self.energy = 50 
-        self.noise = noise
-
-    def sleep(self):
-        self.energy += 25
-        return self
-
-    def eat(self):
-        self.energy += 5
-        self.health += 10
-        return self
-
-    def play(self):
-        self.health += 5
-        self.energy -= 5
-        return self
-
-    def noise(self):
-        print(self.noise)
-
+import pet
 
 class Ninja:
 
@@ -38,6 +11,7 @@ class Ninja:
 
     def walk(self):
         self.pet.play()
+        print(f"Walking {self.pet.name}. ")
         return self
 
     def feed(self):
@@ -50,7 +24,8 @@ class Ninja:
         return self
 
     def bathe(self):
-        self.pet.noise()
+        print(f"Washing {self.pet.name}.")
+        self.pet.make_noise()
         
 
 
@@ -61,7 +36,7 @@ baker = Pet("Baker","Golden Retriever",['jumping'],"barking")
 
 caleb = Ninja("Caleb","Koehn",pet_treats,pet_food,baker)
 
-caleb.feed();
-caleb.feed();
-caleb.walk();
-caleb.bathe();
+caleb.feed()
+caleb.feed()
+caleb.walk()
+caleb.bathe()
