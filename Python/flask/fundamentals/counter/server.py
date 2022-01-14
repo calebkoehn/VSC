@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, session
+from flask import Flask, render_template, redirect, session
 
 app = Flask(__name__)
 app.secret_key = 'shhhh'
@@ -6,23 +6,17 @@ app.secret_key = 'shhhh'
 
 @app.route('/')
 def index():
-    if 'key_name' in session:
-        print('key exists!')
+    if "count" not in session:
+        session["count"] = 0
     else:
-        print("key 'key_name' does NOT exist")
-        return render_template("index.html")
+        session['count'] += 1
+    return render_template("index.html")
 
 
-
-
-
-
-
-
-
-
-
-
+@app.route('/reset')
+def reset():
+    session.clear()
+    return redirect('/')
 
 
 if __name__ == "__main__":
