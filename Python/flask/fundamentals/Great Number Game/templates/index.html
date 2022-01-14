@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Great Number Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container text-center">
+
+        <h1 class="text-primary">The Great Number Game</h1>
+
+        <h4>I am thinking of a number between 1 and 100!</h4>
+        <h4>Take a guess and see if you're right!</h4>
+
+        {% if location == 'high' or location == 'low'%}
+        <div class="img-thumbnail bg-danger text-light">
+            <p>Your guess is too {{ location }}</p>
+        </div>
+        {%elif location == 'correct'%}
+        <div class="img-thumbnail bg-success text-light">
+            <p>{{guess}} is the correct number!</p>
+        </div>
+        {% endif %}
+        <form action="/process_guess" method="post">
+
+            <div class="row">
+                <label for="guess" class="col-sm-2 col-form-label col-form-label-lg">Guess:
+
+                </label>
+                <div class="col-sm-10">
+                <input type="number" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Give Us Your Best Guess" name="guess">
+                </div>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Guess!">
+
+        </form>
+
+    </div>
+</body>
+</html>
