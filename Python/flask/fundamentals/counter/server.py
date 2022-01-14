@@ -13,7 +13,7 @@ def index():
     return render_template("index.html")
 
 
-@app.route('/reset')
+@app.route('/destroy_session')
 def reset():
     session.clear()
     return redirect('/')
