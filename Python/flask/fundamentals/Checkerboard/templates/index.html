@@ -24,15 +24,15 @@
 </head>
 <body>
     <table>
-    {% for i in range(4):%}
+    {% for i in range(0,row):%}
         <tr>
-            {% for j in range(4):%}
+            {% for x in range(0,col):%}
             <td class="color1"></td>
             <td class="color2"></td>
             {% endfor %}
         </tr>
         <tr>
-            {% for j in range(4): %}
+            {% for j in range(0,col): %}
             <td class="color2"></td>
             <td class="color1"></td>
             {% endfor %}
