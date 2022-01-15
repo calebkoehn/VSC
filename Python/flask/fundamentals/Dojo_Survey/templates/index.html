@@ -9,31 +9,37 @@
 
 </head>
 <body>
-    <div class="container text-center " >
+    <div class="container bg-secondary text-primary p-5 col-3 mx-auto " >
 
+        <form action='/survey' method='post'>
+            <h3 class="text-primary">Dojo Survey</h3>
 
-        <h3 class="text-primary">Dojo Survey</h3>
-        <form action='/users' method='post'>
-            <input type="hidden" name="age" value="18">
-            <label for='name'>Your Name:</label>
-            <input type='text' name='name'>
-
-            <label for='city'>Dojo Location:</label>
-            <select name="city">
-                <option value="1">Oakland</option>
-                <option value="2">San Jose</option>
-                <option value="3">Chicago</option>
-                <option value="4">New York</option>
-            </select>
-            <label for='language'>Favorite Language:</label>
-            <select name="language">
-                <option value="1">Python</option>
-                <option value="2">C#</option>
-                <option value="3">Javascript</option>
-                <option value="4">HTML</option>
-            </select>
-            <label for='text'>Comment (optional):</label>
-            <input type="text" name="Comment" >
+            <div class="form-group">
+                <label for='name'>Your Name:</label>
+                <input type='text' name='name'>
+            </div>
+            <div class="form-group">
+                <label for='city'>Dojo Location:</label>
+                <select name="city">
+                    <option value="Oakland">Oakland</option>
+                    <option value="San Jose">San Jose</option>
+                    <option value="Chicago">Chicago</option>
+                    <option value="Tulsa">Tulsa</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for='language'>Favorite Language:</label>
+                <select name="language">
+                    <option value="Python">Python</option>
+                    <option value="C#">C#</option>
+                    <option value="JavaScript">Javascript</option>
+                    <option value="HTML">HTML</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for='text'>Comment (optional):</label>
+                <input type="text" name="Comment" >
+            </div>
 
             <input class="btn btn-primary" type='submit' value='Submit'>
 
