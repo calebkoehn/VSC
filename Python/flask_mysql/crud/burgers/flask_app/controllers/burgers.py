@@ -12,10 +12,10 @@ from flask_app.models.burger import Burger
 @app.route('/create/burger',methods=['POST'])
 def create_burger():
 	data = {
-        	"name" : request.form['name'],
-        	"bun" : request.form['bun'],
-        	"meat" : request.form['meat'],
-        	"calories" : request.form['calories']
+        "name" : request.form['name'],
+        "bun" : request.form['bun'],
+        "meat" : request.form['meat'],
+        "calories" : request.form['calories']
 	}
 	Burger.save(data)
 	return redirect('/burgers')
