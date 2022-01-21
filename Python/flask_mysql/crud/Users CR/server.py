@@ -1,29 +1,57 @@
 from flask import Flask, render_template, request, redirect
 
 from user import User
-app = Flask(__name__)
-@app.route("/")
+
+app=Flask(__name__)
+
+@app.route('/')
 def index():
-    # call the get all classmethod to get all users
-    users = User.get_all()
-    print(users)
-    return render_template("index.html", users=users)
+    return redirect('/users')
 
-@app.route('/create', methods=["POST"])
-def create_user():
-    # First we make a data dictionary from our request.form coming from our template.
-    # The keys in data need to line up exactly with the variables in our query string.
-    data = {
-        "fname": request.form["fname"],
-        "lname" : request.form["lname"],
-        "email" : request.form["email"]
+
+@app.route('/users')
+def users():
+    return render_template("users.html",users=User.get_all())
+
+
+@app.route('/user/new')
+def new():
+    return render_template("new.html")
+
+@app.route('/user/create',methods=['POST'])
+def create():
+    print(request.form)
+    User.save(request.form)
+    return redirect('/users')
+
+
+@app.route('/user/edit/<int:id>')
+def edit(id):
+    data={
+        "id":id
     }
-    # We pass the data dictionary into the save method from the user class.
-    User.save(data)
-    # Don't forget to redirect after saving to the database.
-    return redirect('/')
+    return render_template('edit.html', user=User.get_one(data))
+
+@app.route('/user/show/<int:id>')
+def show(id):
+    data={
+        "id":id
+    }
+    return render_template('show.html', user=User.get_one(data))
+
+@app.route('/user/update',methods=['POST'])
+def update():    
+    User.update(request.form)
+    return redirect('/users')
 
 
+@app.route('/user/destroy/<int:id>')
+def destroy(id):
+    data ={
+        "id": id
+    }
+    User.destroy(data)
+    return redirect('/users')
 
 
 if __name__ == "__main__":
