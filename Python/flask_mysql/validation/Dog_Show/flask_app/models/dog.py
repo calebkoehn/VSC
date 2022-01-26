@@ -87,11 +87,11 @@ class Dog:
 
     @classmethod
     def update_dog_info(cls, data):
-        query = "UPDATE dogs SET name= %(name)s, breed =  %(breed)s,age =  %(age)s, updated_at = NOW() WHERE id = %(dog_id)s;"
+        query = "UPDATE dogs SET name= %(name)s, breed =  %(breed)s, age =  %(age)s, updated_at = NOW() WHERE id = %(dog_id)s;"
         results = connectToMySQL("petshow_schema").query_db(query,data)
 
     @classmethod
     def delete_dog(cls, data):
-        query = "DELETE FROM dogs WHERE id = %(dog_id)s;"
+        query = "DELETE FROM dogs WHERE ID = %(dog_id)s;"
         results = connectToMySQL("petshow_schema").query_db(query,data)
         return
