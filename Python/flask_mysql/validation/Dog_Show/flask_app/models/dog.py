@@ -6,13 +6,13 @@ from flask_app import app
 
 class Dog:
     def __init__(self,data):
-        self.id= data["id"],
-        self.name= data["name"],
-        self.breed= data["breed"],
-        self.age= data["age"],
-        self.created_at= data["created_at"],
-        self.updated_at= data["updated_at"],
-        self.owner_id= data["owner_id"],
+        self.id= data["id"]
+        self.name= data["name"]
+        self.breed= data["breed"]
+        self.age= data["age"]
+        self.created_at= data["created_at"]
+        self.updated_at= data["updated_at"]
+        self.owner_id= data["owner_id"]
         
         self.owner = {}
 
