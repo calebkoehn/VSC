@@ -28,8 +28,12 @@
             <tbody>
                 {% for recipe in all_recipes %}
                 <tr>
-                    <th scope="row">{{ recipe.name }}</a></th>
-                    <td>{{ recipe.time }}</td>
+                    <th>{{recipe.name}}</th>
+                    {% if recipe.under30 == 1 %}
+                    <td>Yes</td>
+                    {% else %}
+                    <td>No</td>
+                    {% endif %}
                     <td>
                         <a href="/recipe/{{recipe.id}}/view">View Instructions</a>
                         |

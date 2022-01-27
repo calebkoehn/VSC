@@ -13,66 +13,70 @@ def create_recipe():
 
 @app.route("/add_recipe", methods=["POST"])
 def add_recipe():
+    if "user_id" not in session:
+        flash("Please login or register before entering site!")
+        return redirect("/")
     data = {
         "name" : request.form["name"],
         "description" : request.form["description"],
         "instruction" : request.form["instruction"],
         "date" : request.form["date"],
+        "under30" : int(request.form["under30"]),
+        "user_id" : request.form["user_id"],
     }
 
     if not Recipe.validate_recipe(data):
-        return redirect("/add_recipe")
+        return redirect("/create_recipe")
 
     Recipe.add_recipe(data)
 
 
     return redirect("/dashboard")
 
-# @app.route("/dog/<int:dog_id>")
-# def show_dog(dog_id):
-#     if "user_id" not in session:
-#         flash("Please login or register before entering site!")
-#         return redirect("/")
-#     data ={
-#         "dog_id" : dog_id
-#     }
-#     dog = Dog.get_dog_with_user(data)
+@app.route("/recipe/<int:recipe_id>/view")
+def show_recipe(recipe_id):
+    if "user_id" not in session:
+        flash("Please login or register before entering site!")
+        return redirect("/")
+    data ={
+        "recipe_id" : recipe_id
+    }
+    recipe = Recipe.get_recipe_with_user(data)
 
-#     return render_template("show_dog.html", dog = dog)
+    return render_template("show_recipe.html", recipe = recipe)
 
+@app.route("/recipe/<int:recipe_id>/edit")
+def edit_recipe(recipe_id):
+    data = {
+        "recipe_id" : recipe_id
+    }
+    recipe = Recipe.get_recipe_with_user(data)
+    return render_template("edit_recipe.html", recipe = recipe)
 
-# @app.route("/dog/<int:dog_id>/edit")
-# def edit_dog(dog_id):
-#     data = {
-#         "dog_id" : dog_id
-#     }
-#     dog = Dog.get_dog_with_user(data)
-#     return render_template("edit_dog.html", dog = dog)
+@app.route("/recipe/<int:recipe_id>/update", methods=["POST"])
+def update_recipe(recipe_id):
+    data = {
+        "name" : request.form["name"],
+        "description" : request.form["description"],
+        "instruction" : request.form["instruction"],
+        "date" : request.form["date"],
+        "under30" : int(request.form["under30"]),
+        "recipe_id" : recipe_id
+    }
 
+    if not Recipe.validate_recipe(data):
+        return redirect(f"/recipe/{recipe_id}/edit")
 
-# @app.route("/dog/<int:dog_id>/update", methods=["POST"])
-# def update_dog(dog_id):
-#     data = {
-#         "name" : request.form["name"],
-#         "breed" : request.form["breed"],
-#         "age" : request.form["age"],
-#         "dog_id" : dog_id
-#     }
+    Recipe.update_recipe(data)
 
-#     if not Dog.validate_dog(data):
-#         return redirect(f"/dog/{dog_id}/edit")
+    return redirect("/dashboard")
 
-#     Dog.update_dog_info(data)
-
-#     return redirect("/dashboard")
-
-
-# @app.route("/dog<int:dog_id>/delete")
-# def delete_dog(dog_id):
+@app.route("/recipe<int:recipe_id>/delete")
+def delete_recipe(recipe_id):
     
-#     data = {
-#         "dog_id" : dog_id
-#     }
+    data = {
+        "recipe_id" : recipe_id
+    }
 
-#     Dog.delete_dog(data)
-#     return redirect("/dashboard")
+    Recipe.delete_recipe(data)
+    return redirect("/dashboard")

@@ -11,7 +11,7 @@ class Recipe:
         self.description= data["description"]
         self.instruction= data["instruction"]
         self.date= data["date"]
-        self.time= data["time"]
+        self.under30= data["under30"]
         self.created_at= data["created_at"]
         self.updated_at= data["updated_at"]
         self.user_id= data["user_id"]
@@ -33,12 +33,14 @@ class Recipe:
         if len(data["instruction"]) <3 :
             flash("Instructions must be longer than 3 characters")
             is_valid = False
-
+        if (data["date"]) == "":
+            flash("Please enter a date.")
+            is_valid = False
         return is_valid
 
     @classmethod
     def add_recipe(cls,data):
-        query = "INSERT INTO recipes (name, description, instruction, date, created_at) VALUES (%(name)s, %(description)s, %(instruction)s,%(date)s, NOW());"
+        query = "INSERT INTO recipes (name, description, instruction, date, under30,user_id, created_at) VALUES (%(name)s, %(description)s, %(instruction)s,%(date)s,%(under30)s,%(user_id)s, NOW());"
         results = connectToMySQL("recipes_schema").query_db(query,data)
         return results
 
@@ -66,32 +68,32 @@ class Recipe:
 
         return all_recipes
 
-    # @classmethod
-    # def get_recipe_with_user(cls,data):
-    #     query = "SELECT * FROM recipes LEFT JOIN users ON recipes.user_id = users.id WHERE recipes.id = %(recipe_id)s;"
-    #     results = connectToMySQL("recipes_schema").query_db(query,data)
+    @classmethod
+    def get_recipe_with_user(cls,data):
+        query = "SELECT * FROM recipes LEFT JOIN users ON recipes.user_id = users.id WHERE recipes.id = %(recipe_id)s;"
+        results = connectToMySQL("recipes_schema").query_db(query,data)
 
-    #     recipe = cls(results[0])
+        recipe = cls(results[0])
 
-    #     user_data = {
-    #         "id": results[0]["users.id"],
-    #         "first_name": results[0]["first_name"],
-    #         "last_name": results[0]["last_name"],
-    #         "email": results[0]["email"],
-    #         "password": results[0]["password"],
-    #         "created_at": results[0]["users.created_at"],
-    #         "updated_at": results[0]["updated_at"],
-    #     }
-    #     recipe.user = user.User(user_data)
-    #     return recipe
+        user_data = {
+            "id": results[0]["users.id"],
+            "first_name": results[0]["first_name"],
+            "last_name": results[0]["last_name"],
+            "email": results[0]["email"],
+            "password": results[0]["password"],
+            "created_at": results[0]["users.created_at"],
+            "updated_at": results[0]["updated_at"],
+        }
+        recipe.user = user.User(user_data)
+        return recipe
 
-    # @classmethod
-    # def update_recipe_info(cls, data):
-    #     query = "UPDATE recipes SET name= %(name)s, breed =  %(breed)s, age =  %(age)s, updated_at = NOW() WHERE id = %(recipe_id)s;"
-    #     results = connectToMySQL("recipes_schema").query_db(query,data)
+    @classmethod
+    def update_recipe(cls, data):
+        query = "UPDATE recipes SET name= %(name)s, description =  %(description)s, instruction =  %(instruction)s, date =  %(date)s, under30 =  %(under30)s, updated_at = NOW() WHERE id = %(recipe_id)s;"
+        results = connectToMySQL("recipes_schema").query_db(query,data)
 
-    # @classmethod
-    # def delete_recipe(cls, data):
-    #     query = "DELETE FROM recipes WHERE ID = %(recipe_id)s;"
-    #     results = connectToMySQL("recipes_schema").query_db(query,data)
-    #     return
+    @classmethod
+    def delete_recipe(cls, data):
+        query = "DELETE FROM recipes WHERE ID = %(recipe_id)s;"
+        results = connectToMySQL("recipes_schema").query_db(query,data)
+        return

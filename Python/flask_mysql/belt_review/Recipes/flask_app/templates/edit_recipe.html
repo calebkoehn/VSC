@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add a Recipe</title>
+    <title>Edit Recipe</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 </head>
@@ -12,7 +12,7 @@
     <div class="container">
         <a href="/dashboard" class="btn btn-primary mt-2 float-end"> Dashboard</a>
         <a href="/logout" class="btn btn-danger float-end mt-2">Logout</a>
-        <h1>Add New Recipe</h1>
+        <h1>Edit Recipe</h1>
         {% with messages = get_flashed_messages() %}
             {% if messages %}
             {% for message in messages %}
@@ -20,24 +20,24 @@
             {% endfor %}
             {% endif %}
             {% endwith %}
-            <form action="/add_recipe" method="post">
+            <form action="/recipe/{{recipe.id}}/update" method="post">
                 <input type="hidden" value="{{user_id}}" name="user_id">
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Name: </label>
-                    <input type="text" class="form-control" id="name" name="name" >
+                    <input type="text" class="form-control" id="name" name="name" value="{{recipe.name}}" >
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">Description: </label>
-                    <input type="text" class="form-control" id="description" name="description" >
+                    <input type="text" class="form-control" id="description" name="description" value="{{recipe.description}}">
                 </div>
                 <div class="mb-3">
                     <label for="instruction" class="form-label">Instructions: </label>
-                    <input type="text" class="form-control" id="instruction" name="instruction" >
+                    <input type="text" class="form-control" id="instruction" name="instruction" value="{{recipe.instruction}}">
                 </div>
                 <div class="mb-3">
                     <label for="date" class="form-label">Date Made On: </label>
-                    <input type="date" class="form-control" id="date" name="date" >
+                    <input type="date" class="form-control" id="date" name="date" value="{{recipe.date}}" >
                 </div>
                 <label for="under30">Under 30 Minutes?</label>
                 <div class="mb-3">
@@ -48,7 +48,7 @@
                     <label for="1" class="form-label">Yes </label>
                     <input type="radio"  name="under30" id="under30" value="1">
                 </div>
-                    <button type="submit" class="btn btn-primary">Create</button>
+                    <button type="submit" class="btn btn-primary">Update</button>
             </form>
     </div>
 </body>
