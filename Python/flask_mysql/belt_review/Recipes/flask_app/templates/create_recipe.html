@@ -20,8 +20,7 @@
             {% endfor %}
             {% endif %}
             {% endwith %}
-            <form action="/create_recipe" method="post">
-                <input type="hidden" value="{{owner_id}}" name="owner_id">
+            <form action="/add_recipe" method="post">
 
                 <div class="mb-3">
                     <label for="name" class="form-label">Name: </label>
@@ -32,18 +31,18 @@
                     <input type="text" class="form-control" id="description" name="description" >
                 </div>
                 <div class="mb-3">
-                    <label for="instructions" class="form-label">Instructions: </label>
-                    <input type="text" class="form-control" id="instructions" name="instructions" >
+                    <label for="instruction" class="form-label">Instructions: </label>
+                    <input type="text" class="form-control" id="instruction" name="instruction" >
                 </div>
                 <div class="mb-3">
-                    <label for="date_made" class="form-label">Date Made On: </label>
-                    <input type="date" class="form-control" id="date_made" name="date_made" >
+                    <label for="date" class="form-label">Date Made On: </label>
+                    <input type="date" class="form-control" id="date" name="date" >
                 </div>
-                <div class="mb-3">
+                <!-- <div class="mb-3">
                     <label for="under_30" class="form-label">Under 30 Minutes? </label>
                     <input type="checkbox" value="Yes" class="form-control" id="under30_yes" name="under30_yes" >
                     <input type="checkbox" value="No" class="form-control" id="under30_no" name="under30_no" >
-                </div>
+                </div> -->
                     <button type="submit" class="btn btn-primary">Create</button>
             </form>
     </div>

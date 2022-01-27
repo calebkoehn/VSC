@@ -11,21 +11,19 @@ def create_recipe():
 
     return render_template("create_recipe.html", user_id = session["user_id"])
 
-@app.route("/create_recipe", methods=["POST"])
-def create_recipe():
+@app.route("/add_recipe", methods=["POST"])
+def add_recipe():
     data = {
         "name" : request.form["name"],
         "description" : request.form["description"],
         "instruction" : request.form["instruction"],
         "date" : request.form["date"],
-        "time" : request.form["time"],
-        "user_id" : request.form["user_id"],
     }
 
     if not Recipe.validate_recipe(data):
-        return redirect("/new_recipe")
+        return redirect("/add_recipe")
 
-    Recipe.create_recipe(data)
+    Recipe.add_recipe(data)
 
 
     return redirect("/dashboard")
