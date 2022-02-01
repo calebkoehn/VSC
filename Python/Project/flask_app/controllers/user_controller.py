@@ -1,6 +1,7 @@
 from flask_app import app
 from flask import render_template, redirect, request, session, flash
 from flask_app.models.user import User
+from flask_app.models.contact import Contact
 from flask_bcrypt import Bcrypt        
 bcrypt = Bcrypt(app) 
 
@@ -55,9 +56,9 @@ def dashboard():
 
     }
     user = User.get_by_id(data)
-    # all_dogs = Dog.get_all()
+    all_contacts = Contact.get_all()
 
-    return render_template("dashboard.html", user = user)  #all_dogs = all_dogs)
+    return render_template("dashboard.html", user = user, all_contacts = all_contacts)
 
 
 @app.route("/logout")

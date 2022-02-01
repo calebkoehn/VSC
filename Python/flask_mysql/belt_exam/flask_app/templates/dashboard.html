@@ -12,35 +12,36 @@
     <div class="container">
         <a href="/logout" class="btn btn-danger float-end mt-2">Logout</a>
         <h1>Welcome, <span class="text-primary">{{user.first_name}}</span>!</h1>
+        <h1>All TV Shows</h1>
         <table class="table">
             <thead>
                 <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Breed</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Owner</th>
+                    <th scope="col">Title</th>
+                    <th scope="col">Network</th>
+                    <th scope="col">Release Date</th>
                     <th scope="col">Actions</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- {% for dog in all_dogs %} -->
+                {% for show in all_shows %}
                 <tr>
-                    <th scope="row">>Test</a></th>
-                    <td>Test</td>
-                    <td>Test</td>
-                    <td>Test</td>
+                    <th scope="col">{{show.title}}</th>
+                    <td>{{show.network}}</td>
+                    <td>{{show.release_date}}</td>
                     <td>
-                        <a href="/dog/{{dog.id}}/edit">Edit</a>
+                        <a href="/show/{{show.id}}/view">Show</a>
                         |
-                        <a href="/dog{{dog.id}}/delete">Delete</a>
+                        <a href="/show/{{show.id}}/edit">Edit</a>
+                        |
+                        <a href="/show{{show.id}}/delete">Delete</a>
                     </td>
                 </tr>
-                <!-- {% endfor %} -->
+                {% endfor %}
             </tbody>
         </table>
 
 
-        <a href="/new_dog" class="btn btn-warning">Add New Dog</a>
+        <a href="/new" class="btn btn-primary float-end">Add New Show</a>
 
     </div>
 </body>

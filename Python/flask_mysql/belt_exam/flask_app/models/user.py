@@ -36,8 +36,8 @@ class User:
             flash("Email already in use!")
             is_valid = False
 
-        if len(data["password"]) <3:
-            flash("Password must be longer than 3 characters")
+        if len(data["password"]) <8:
+            flash("Password must be longer than 8 characters")
             is_valid = False
         if data["password"] != data["pass_conf"]:
             flash("Passwords don't match")
@@ -63,8 +63,7 @@ class User:
     @classmethod
     def get_by_email(cls,data):
         query = "SELECT * FROM users WHERE email = %(email)s;"
-        result = connectToMySQL("belt_schema").query_db(query,data)
-        # Didn't find a matching user
+        result = connectToMySQL("tvshow_schema").query_db(query,data)
         if len(result) < 1:
             return False
         return cls(result[0])
@@ -72,14 +71,13 @@ class User:
     @classmethod
     def create_user(cls,data):
         query = "INSERT INTO users (first_name, last_name, email, password, created_at) VALUES (%(first_name)s, %(last_name)s,%(email)s, %(password)s, NOW())"
-        results = connectToMySQL("belt_schema").query_db(query, data)
+        results = connectToMySQL("tvshow_schema").query_db(query, data)
         return results
 
     @classmethod
     def get_by_id(cls,data):
         query = "SELECT * FROM users WHERE id = %(user_id)s;"
-        result = connectToMySQL("belt_schema").query_db(query,data)
-        # Didn't find a matching user
+        result = connectToMySQL("tvshow_schema").query_db(query,data)
         if len(result) < 1:
             return False
         return cls(result[0])
