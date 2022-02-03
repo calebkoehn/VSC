@@ -85,7 +85,7 @@ class Contact:
 
     @classmethod
     def update_contact(cls, data):
-        query = "UPDATE contacts SET company= %(company)s, name =  %(name)s, email =  %(email)s, updated_at = NOW() WHERE id = %(contact_id)s;"
+        query = "UPDATE contacts SET company= %(company)s, name =  %(name)s, email =  %(email)s, note =  %(note)s, updated_at = NOW() WHERE id = %(contact_id)s;"
         results = connectToMySQL("crm_schema").query_db(query,data)
 
     @classmethod
