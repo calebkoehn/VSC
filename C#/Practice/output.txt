@@ -1,0 +1,3 @@
+Calebs-MacBook-Pro:FirstCSharp calebkoehn$ dotnet run
+Hello World!
+Calebs-MacBook-Pro:FirstCSharp calebkoehn$ 
