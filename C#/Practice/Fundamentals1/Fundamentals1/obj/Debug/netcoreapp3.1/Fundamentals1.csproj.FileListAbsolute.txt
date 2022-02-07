@@ -1,0 +1,12 @@
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.deps.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.runtimeconfig.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.runtimeconfig.dev.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/bin/Debug/netcoreapp3.1/Fundamentals1.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.csprojAssemblyReference.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.AssemblyInfoInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.AssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.csproj.CoreCompileInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/Debug/netcoreapp3.1/Fundamentals1.genruntimeconfig.cache
