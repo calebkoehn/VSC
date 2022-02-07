@@ -8,6 +8,8 @@ namespace Collections_Practice
         static void Main(string[] args)
         {
             int[] arrayOfInts = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+            string[] names = {"Tim", "Martin", "Nikki", "Sara"};
+            string[] alternating = {"True", "False","True", "False","True", "False","True", "False","True", "False",};
             List<string> flavors = new List<string>();
 
             flavors.Add("Chocolate");
@@ -18,8 +20,19 @@ namespace Collections_Practice
 
             Console.WriteLine($"There are {flavors.Count} ice cream flavors.");
             Console.WriteLine(flavors[2]);
-            // Console.WriteLine(flavors.Remove[2]);
-            // Console.WriteLine($"There are {flavors.Count} ice cream flavors.");
+            flavors.RemoveAt(2);
+            Console.WriteLine($"There are {flavors.Count} ice cream flavors.");
+
+            Dictionary<string, string> users = new Dictionary<string, string>();
+            users.Add("Tim", "Vanilla");
+            users.Add("Martin", "Chocolate");
+            users.Add("Niki", "Strawberry");
+            users.Add("Sara", "Strawberry");
+
+            foreach (KeyValuePair<string,string> entry in users)
+            {
+                Console.WriteLine(entry.Key + " - " + entry.Value);
+            }
         }
     }
 }
