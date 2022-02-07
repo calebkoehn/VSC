@@ -1,0 +1,12 @@
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.deps.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.runtimeconfig.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.runtimeconfig.dev.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/bin/Debug/netcoreapp3.1/Boxing_Unboxing.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.csprojAssemblyReference.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.AssemblyInfoInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.AssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.csproj.CoreCompileInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/Debug/netcoreapp3.1/Boxing_Unboxing.genruntimeconfig.cache
