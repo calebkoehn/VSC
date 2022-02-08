@@ -31,25 +31,20 @@ namespace Puzzles
             Console.WriteLine($"The Average Value is: {(float)sum/numbers.Length}");
         }
 
-        // public static string TossACoin()
-        // {
-        //     Console.WriteLine("Tossing a Coin!");
+        public static string TossACoin()
+        {
+            Console.WriteLine("Tossing a Coin!");
 
-        //     Random rnd = new Random();
-        //     for(int i =0; i <=2; i++)
-        //     {
-        //         rnd.Next(3);
-        //         if(i == 1)
-        //         {
-        //             Console.WriteLine("Heads!");
-        //         } 
-        //         else if(i==2)
-        //         {
-        //             Console.WriteLine("Tails");
-        //         }
-                
-        //     }
-        // }
+            Random rand = new Random();
+            string result;
+            if(rand.Next(2) == 0)
+                result = "Tails";
+            else
+                result = "Heads";
+
+            Console.WriteLine($"The result is: {result}");
+            return result;
+        }
 
         public static List<string> Names()
         {
