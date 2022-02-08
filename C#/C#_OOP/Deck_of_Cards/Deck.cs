@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 
 
 namespace Deck_of_Cards
@@ -6,44 +7,56 @@ namespace Deck_of_Cards
 {
     class Deck
     {
-        public Card[] deck;
-        public int currentCard;
-        public const int Number_Of_Cards = 52;
-        public Random rand;
-
+        private List<Card> cards = new List<Card>();
         public Deck()
         {
-            string[] faces = {"Ace", "Two","Three", "Four","Five", "Six","Seven", "Eight","Nine", "Ten","Jack", "Queen","King"};
-            string [] suits = {"Hearts","Clubs","Diamonds","Spades"};
-            deck = new Card[Number_Of_Cards];
-            currentCard = 0;
-            rand = new Random();
-            for (int count = 0; count < deck.Length; count ++)
-                deck[count] = new Card(faces[count % 11], suits[count / 13]);
-
+            Reset();
         }
-        public void Shuffle()
+        public List<Card> Reset()
         {
-            currentCard = 0;
-            for(int first = 0; first < deck.Length; first ++)
+            cards.Clear();
+            for(int i =0; i < 4; i++)
             {
-                int second = rand.Next(Number_Of_Cards);
-                Card temp = deck[first];
-                deck[first] = deck[second];
-                deck[second] = temp;
+                int x= 1;
+                while(x<14)
+                {
+                    cards.Add(new Card(Card.Suits[i], x));
+                    x++;
+                }
+            }
+            return cards;
+        }
+        public List<Card> Cards 
+        {
+            get { return this.cards;}
+        }
+        public void ShowDeck()
+        {
+            foreach(Card c in cards)
+            {
+                c.SayCard();
             }
         }
-        public Card DealCard()
+        public Card Deal()
         {
-            if(currentCard < deck.Length)
-                return deck[currentCard++];
-            else 
-                return null;
+            Card theCard = cards[0];
+            cards.RemoveAt(0);
+            return theCard;
+        }
+        
+        public void Shuffle()
+        {
+            List<Card> cards2shuffle = this.cards;
+            List<Card> shuffled = new List<Card>();
+            Random rand = new Random();
+            while(cards2shuffle.Count > 0)
+            {
+                int idx = rand.Next(0, cards2shuffle.Count);
+                shuffled.Add(cards2shuffle[idx]);
+                cards2shuffle.RemoveAt(idx);
+            }
+            this.cards = shuffled;
         }
     }
-
-
-
-
 
 }
