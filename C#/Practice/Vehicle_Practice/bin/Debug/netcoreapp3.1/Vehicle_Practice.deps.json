@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Vehicle_Practice/1.0.0": {
+        "runtime": {
+          "Vehicle_Practice.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Vehicle_Practice/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
