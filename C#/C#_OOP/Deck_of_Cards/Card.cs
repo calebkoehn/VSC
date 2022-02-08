@@ -34,7 +34,7 @@ namespace Deck_of_Cards
             suit = s;
             value = val;
         }
-        public void SayCard()
+        public void ShowCard()
         {
             Console.WriteLine("The {0} of {1}", sVal, suit);
         }

@@ -34,7 +34,7 @@ namespace Deck_of_Cards
         {
             foreach(Card c in cards)
             {
-                c.SayCard();
+                c.ShowCard();
             }
         }
         public Card Deal()
