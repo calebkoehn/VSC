@@ -9,13 +9,15 @@ namespace Basic13
         {
             Console.WriteLine("Hello World!");
             // PrintNumbers();
-            PrintOdds();
+            // PrintOdds();
             // PrintSum();
-            // int[]myarray = new int[]{-5,46,7,68,-25};
+            int[]myarray = new int[]{5,46,7,68,25};
             // printArray(myarray);
-            // List<int> myList = new List<int>(){3,5,7,9,11};
+            List<int> myList = new List<int>(){3,5,7,9,11};
             // printList(myList);
             // dojoReplace(myarray);
+            // GetAverage(myarray);
+            // FindMax(myarray);
 
         }
         public static void PrintNumbers()
@@ -74,8 +76,8 @@ namespace Basic13
             sum += num;
 
             float avg =(float)sum/numbers.Length;
-            Console.WriteLine($"Average is{avg}");
-            return avg;
+            Console.WriteLine($"The average is: {avg}");
+            // return avg;
         }
 
         public static int[] OddArray()
