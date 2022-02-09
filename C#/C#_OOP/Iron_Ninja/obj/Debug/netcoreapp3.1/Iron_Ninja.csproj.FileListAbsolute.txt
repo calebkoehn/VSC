@@ -1,0 +1,12 @@
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/bin/Debug/netcoreapp3.1/Iron_Ninja.deps.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/bin/Debug/netcoreapp3.1/Iron_Ninja.runtimeconfig.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/bin/Debug/netcoreapp3.1/Iron_Ninja.runtimeconfig.dev.json
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/bin/Debug/netcoreapp3.1/Iron_Ninja.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/bin/Debug/netcoreapp3.1/Iron_Ninja.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.csprojAssemblyReference.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.AssemblyInfoInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.AssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.csproj.CoreCompileInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Iron_Ninja/obj/Debug/netcoreapp3.1/Iron_Ninja.genruntimeconfig.cache
