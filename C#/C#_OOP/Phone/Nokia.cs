@@ -7,18 +7,13 @@ namespace Phone
     public class Nokia : Phone, IRingable
     {
         public Nokia(string versionNumber, int batteryPercentage, string carrier, string ringTone)
-            : base(versionNumber, batteryPercentage, carrier, ringTone) 
-            { 
-                isUnlocked = false;
-            }
-        private bool isUnlocked;
+            : base(versionNumber, batteryPercentage, carrier, ringTone) {}
         public string Ring()
         {
             return RingTone; 
         }
         public string Unlock()
         {
-            isUnlocked = true;
             return "Unlocked with Pin";
         }
         public override void DisplayInfo()
