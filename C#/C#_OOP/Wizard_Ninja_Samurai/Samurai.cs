@@ -16,7 +16,7 @@ namespace Wizard_Ninja_Samurai
             if(remainingHealth < 50)
             {
                 target.Health = 0;
-                Console.WriteLine($"{target.Name} HAS BEEN DEALT THE DEATH BLOW!!!")
+                Console.WriteLine($"{target.Name} HAS BEEN DEALT THE DEATH BLOW!!!");
             }
             return remainingHealth;
         }

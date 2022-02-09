@@ -8,11 +8,12 @@ namespace Wizard_Ninja_Samurai
         public int Strength;
         public int Intelligence;
         public int Dexterity;
-        private int health;
+        protected int health;
          
         public int Health
         {
             get { return health; }
+            set{}
         }
          
         public Human(string name)
@@ -34,7 +35,7 @@ namespace Wizard_Ninja_Samurai
         }
          
         // Build Attack method
-        public int Attack(Human target)
+        public virtual int Attack(Human target)
         {
             int dmg = Strength * 3;
             target.health -= dmg;
