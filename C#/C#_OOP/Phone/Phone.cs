@@ -1,6 +1,11 @@
 namespace Phone
 
 {
+    public interface IRingable 
+    {
+        string Ring();
+        string Unlock();
+    }
 
     public abstract class Phone
     {
@@ -17,7 +22,10 @@ namespace Phone
         }
         // abstract method. This method will be implemented by the subclasses
         public abstract void DisplayInfo();
-        // public getters and setters removed for brevity. Please implement them yourself
+        public string VersionNumber {get { return _versionNumber; }}
+        public int BatteryPercentage { get { return _batteryPercentage; }}
+        public string Carrier { get { return _carrier; }}
+        public string RingTone { get { return _ringTone; }}
     }
         
 }
