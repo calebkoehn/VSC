@@ -1,12 +1,6 @@
 namespace Phone
 
 {
-    public interface IRingable 
-    {
-        string Ring();
-        string Unlock();
-    }
-
     public abstract class Phone
     {
         private string _versionNumber;
