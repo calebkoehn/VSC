@@ -1,25 +1,18 @@
 ﻿using System;
+using System.Collections.Generic;
+using Vehicle_Practice;
 
 namespace Vehicle_Practice
 {
-    public class Program
+    class Program
     {
         public static void Main(string[] args)
         {
-            Vehicle v = new Vehicle(7, "Green");
-            Console.WriteLine(v.Color);
-            Console.WriteLine(v.MaxNumPassengers);
+            Vehicle someVehicle = new Vehicle("Green");
+            Car someCar = new Car("Yellow", "Dodge", "Dart");
+            someVehicle.GetInfo();
+            someCar.GetInfo();
         }
     }
+
 }
-
-//     public class Vehicle
-//     {
-//         public int NumPassengers;
-//         public Vehicle(int val)
-//         {
-//             NumPassengers = val;
-//         }
-//     }
-
-// }

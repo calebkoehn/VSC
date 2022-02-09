@@ -5,20 +5,32 @@ namespace Vehicle_Practice
 {
     class Vehicle
     {
-        private int maxNumPassengers;
-        private string color;
-        public int MaxNumPassengers
+        public int NumPassengers;
+        public string Color;
+        public double Odometer;
+        // Say Vechicle has two overloaded constructors
+        // We will either need to pass up two values (int, string), from Car ...
+        public Vehicle(int numPas, string col)
         {
-            get { return maxNumPassengers; }
+            NumPassengers = numPas;
+            Color = col;
+            Odometer = 0;
         }
-        public string Color
+        // Or just one string value.  
+        public Vehicle(string col)
         {
-            get { return color; }
+            NumPassengers = 5;
+            Color = col;
+            Odometer = 0;
         }
-        public Vehicle(int maxPass, string col)
+
+        public virtual void GetInfo()
         {
-            maxNumPassengers = maxPass;
-            color = col;
+            Console.WriteLine($"Num Passengers: {NumPassengers}");
+            Console.WriteLine($"Color: {Color}");
+            Console.WriteLine($"Miles: {Odometer}");
         }
+        protected double Odometer;
+
     }
 }

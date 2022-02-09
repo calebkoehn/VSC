@@ -10,3 +10,9 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.dll
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.genruntimeconfig.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.csprojAssemblyReference.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.AssemblyInfoInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.AssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.csproj.CoreCompileInputs.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Vehicle_Practice/obj/Debug/netcoreapp3.1/Vehicle_Practice.pdb
