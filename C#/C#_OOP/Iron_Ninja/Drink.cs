@@ -1,4 +1,3 @@
-using System;
 
 namespace Iron_Ninja 
 
@@ -14,12 +13,12 @@ namespace Iron_Ninja
         {
             return $"{Name} (Drink).  Calories: {Calories}.  Spicy?: {IsSpicy}, Sweet?: {IsSweet}";
         }
-        public Drink(string name, int calories, bool spicy, bool sweet)
+        public Drink(string name, int calories, bool spicy)
         {
             Name = name;
             Calories = calories;
             IsSpicy = spicy;
-            IsSweet = sweet;
+            IsSweet = true;
         }
     }   
 

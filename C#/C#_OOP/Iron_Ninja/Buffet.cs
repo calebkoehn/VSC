@@ -5,12 +5,12 @@ namespace Iron_Ninja
 {
     class Buffet
     {
-        public List<Food> Menu;
+        public List<IConsumable> Menu;
 
         //constructor
         public Buffet()
         {
-            Menu = new List<Food>()
+            Menu = new List<IConsumable>()
         {
             new Food("Burger", 1000, false, false),
             new Food("Taco", 600, true, false),
@@ -20,7 +20,7 @@ namespace Iron_Ninja
         };
         }
 
-        public Food Serve()
+        public IConsumable Serve()
         {
             Random rand = new Random();
             return Menu[rand.Next(Menu.Count)];
