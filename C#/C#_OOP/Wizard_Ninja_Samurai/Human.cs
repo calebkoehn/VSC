@@ -41,6 +41,12 @@ namespace Wizard_Ninja_Samurai
             Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage!");
             return target.health;
         }
+        public virtual int Attack(Human target, int dmg)
+        {
+            target.health -= dmg;
+            Console.WriteLine($"{Name} attacked {target.Name} for {dmg} damage!");
+            return target.health;
+        }
     }
 }
 
