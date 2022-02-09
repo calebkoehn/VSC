@@ -17,6 +17,9 @@ namespace Iron_Ninja
             new Food("Steak", 400, false, false),
             new Food("French Fries", 350, false, false),
             new Food("Ice Cream", 800, false, false),
+            new Drink("Coca-Cola", 450, false),
+            new Drink("Lemondade", 350, false),
+            new Drink("Frosty", 450, false),
         };
         }
 
