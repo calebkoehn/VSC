@@ -6,7 +6,7 @@ namespace Wizard_Ninja_Samurai
     class Ninja : Human
 
     {
-        public Ninja(string name) : base(name, 3,3,100,100) {}
+        public Ninja(string name) : base(name, 3,3,175,100) {}
 
         public override int Attack(Human target)
         {
