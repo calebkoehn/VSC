@@ -17,3 +17,14 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.dll
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.genruntimeconfig.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/bin/Debug/netcoreapp3.1/Pactice.Views.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/bin/Debug/netcoreapp3.1/Pactice.Views.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.RazorAssemblyInfo.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.RazorAssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.TagHelpers.input.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.TagHelpers.output.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.RazorCoreGenerate.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Razor/Views/First/Index.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.RazorTargetAssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.Views.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.csproj.CopyComplete
