@@ -17,3 +17,14 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.dll
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.genruntimeconfig.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/bin/Debug/netcoreapp3.1/TimeDisplay.Views.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/bin/Debug/netcoreapp3.1/TimeDisplay.Views.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.RazorAssemblyInfo.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.RazorAssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.TagHelpers.input.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.TagHelpers.output.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.RazorCoreGenerate.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/Razor/Views/Time/Index.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.RazorTargetAssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.Views.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/Debug/netcoreapp3.1/TimeDisplay.csproj.CopyComplete
