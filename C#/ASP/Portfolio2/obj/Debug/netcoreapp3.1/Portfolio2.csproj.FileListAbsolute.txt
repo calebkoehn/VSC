@@ -17,3 +17,15 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.dll
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.genruntimeconfig.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.RazorAssemblyInfo.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.RazorAssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.TagHelpers.input.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.TagHelpers.output.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.RazorCoreGenerate.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/bin/Debug/netcoreapp3.1/Portfolio2.Views.dll
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/bin/Debug/netcoreapp3.1/Portfolio2.Views.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Razor/Views/First/Index.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Razor/Views/First/Project.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.RazorTargetAssemblyInfo.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.Views.pdb
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.csproj.CopyComplete

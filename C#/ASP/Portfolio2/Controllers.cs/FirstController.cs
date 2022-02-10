@@ -6,15 +6,15 @@ namespace Portfolio1     //be sure to use your own project's namespace!
         //for each route this controller is to handle:
         [HttpGet]       //type of request
         [Route("")]     //associated route string (exclude the leading /)
-        public string Index()
+        public ViewResult Index()
         {
-            return "This is my index!";
+            return View("Index");
         }
         [HttpGet]
         [Route("project")]
-        public string Project()
+        public ViewResult Project()
         {
-            return $"These are my projects!";
+            return View("project");
         }
         [HttpGet]
         [Route("contact")]
