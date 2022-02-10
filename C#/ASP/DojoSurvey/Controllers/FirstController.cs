@@ -19,9 +19,10 @@ namespace DojoSurvey.Controllers     //be sure to use your own project's namespa
             return RedirectToAction("Result");
         }
         [HttpGet]       //type of request
-        [Route("result")]     //associated route string (exclude the leading /)
+        [Route("Result")]     //associated route string (exclude the leading /)
         public ViewResult Result()
         {
+            ViewBag.results = SurveyResults;
             return View("Result");
         }
     }
