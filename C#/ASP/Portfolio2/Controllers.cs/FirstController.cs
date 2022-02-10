@@ -10,6 +10,11 @@ namespace Portfolio1     //be sure to use your own project's namespace!
         {
             return View("Index");
         }
+        [HttpPost("firstpost")]
+        public IActionResult Firstpost()
+        {
+            return RedirectToAction("Index");
+        }
         [HttpGet]
         [Route("project")]
         public ViewResult Project()
@@ -18,9 +23,9 @@ namespace Portfolio1     //be sure to use your own project's namespace!
         }
         [HttpGet]
         [Route("contact")]
-        public string Contact()
+        public ViewResult Contact()
         {
-            return $"This is my contact!";
+            return View("contact");
         }
     }
 }

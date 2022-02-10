@@ -29,3 +29,4 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.RazorTargetAssemblyInfo.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.Views.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Portfolio2.csproj.CopyComplete
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/obj/Debug/netcoreapp3.1/Razor/Views/First/Contact.cshtml.g.cs
