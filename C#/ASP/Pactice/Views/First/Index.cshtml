@@ -15,5 +15,19 @@
             <p>@i</p>
         }
     }
+    <h3>Coming From ViewBag: @ViewBag.heffamoose</h3>
+
+    <form action="firstpost" method="post">
+        <label for="names"> Better Names for ViewBag</label>
+        <input type="text" name="names">
+        <input type="submit" value="submit">
+    </form>
+    <h3>Suggested Names for ViewBag variables</h3>
+    @{
+        foreach(string s in ViewBag.suggestions)
+        {
+            <p>@s</p>
+        }
+    }
 </body>
 </html>

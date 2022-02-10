@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace Pactice
 
 {
     public class FirstController : Controller 
     {
+        public static List<string> NameSuggestions = new List<string>();
 
 
         [HttpGet]
@@ -12,18 +14,33 @@ namespace Pactice
         [Route("")]
         public ViewResult Index()
         {
+            ViewBag.heffamoose = "This is the ViewBag.";
+            ViewBag.suggestions = NameSuggestions;
             return View("Index");
         }
 
-        [HttpGet("second")]
-        public string Second()
+        [HttpPost("firstpost")]
+        public IActionResult Firstpost(string names)
         {
-            return "Hello from the second page";
+            NameSuggestions.Add(names);
+            return RedirectToAction("Index");
         }
-        [HttpGet("third/{param}")]
-        public string Third(string param)
+
+        [HttpGet("second")]
+        public RedirectToActionResult Second()
         {
-            return $"The thing you wrote is: {param}";
+            return RedirectToAction("Index");
+        }
+        [HttpGet("third/{whateverIWant}")]
+        public IActionResult Third(string whateverIWant)
+        
+        {
+            if(whateverIWant == "apple")
+            {
+                return View("Third");
+            }else {
+                return RedirectToAction("Index");
+            }
         }
     }
 }

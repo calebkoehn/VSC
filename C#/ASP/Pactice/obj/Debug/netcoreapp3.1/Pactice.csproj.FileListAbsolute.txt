@@ -28,3 +28,5 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.RazorTargetAssemblyInfo.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.Views.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Pactice.csproj.CopyComplete
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Razor/Views/First/Third.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/obj/Debug/netcoreapp3.1/Razor/Views/First/Submit.cshtml.g.cs
