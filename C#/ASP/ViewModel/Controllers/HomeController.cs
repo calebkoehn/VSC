@@ -60,6 +60,7 @@ namespace ViewModel.Controllers
         }
 
 
+
         public IActionResult Privacy()
         {
             return View();
