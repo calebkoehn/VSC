@@ -13,9 +13,12 @@ namespace DojoSurvey.Controllers     //be sure to use your own project's namespa
             return View("Index");
         }
         [HttpPost("firstpost")]
-        public IActionResult Firstpost(string results)
+        public IActionResult firstpost(string name,string dojolocation, string language, string text)
         {
-            SurveyResults.Add(results);
+            SurveyResults.Add(name);
+            SurveyResults.Add(dojolocation);
+            SurveyResults.Add(language);
+            SurveyResults.Add(text);
             return RedirectToAction("Result");
         }
         [HttpGet]       //type of request
