@@ -1,0 +1,17 @@
+@model Product
+<form action="/create/product" method="post">
+    <div class="form-group">
+        <span asp-validation-forclass="support operator from-rainbow">="ProductName"></span>
+        <label asp-for="ProductName"></label>
+        <input <span class="support attribute from<span class=" keyword="" operator=""
+            from-rainbow="">-</span>rainbow">asp-for="ProductName">
+    </div>
+    <div class="<span class=" keyword from<span class=" keyword="" operator="" from<span="">-</span>rainbow">
+        -rainbow">form-group">
+        <span asp-validation-for="Price"></span>
+        <label asp-for="Price"></label>
+        <input asp-for="Price">
+    </div>
+    <input type="submit" value="Add Product">
+</form>
+
