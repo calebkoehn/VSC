@@ -34,3 +34,6 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/Debug/netcoreapp3.1/ViewModel.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/Debug/netcoreapp3.1/ViewModel.genruntimeconfig.cache
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/Debug/netcoreapp3.1/ViewModel.csproj.CopyComplete
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/Debug/netcoreapp3.1/Razor/Views/Home/Numbers.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/Debug/netcoreapp3.1/Razor/Views/Home/SingleUser.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/Debug/netcoreapp3.1/Razor/Views/Home/AllUsers.cshtml.g.cs
