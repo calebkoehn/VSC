@@ -8,18 +8,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-    <div>
-        <h1>Submitted Info</h1>
-        
+    <div class="container col-7">
+        <h1 class="text-center">Submitted Info</h1>
+
+        <table class="table table-striped mt-5">
+        <tr>
+            <th>Name</th>
+            <th>Dojo Location</th>
+            <th>Favorite Language</th>
+            <th>Comments</th>
+        </tr>
         @{
-            
-            foreach(string s in ViewBag.results)
+            foreach(var newsurvey in ViewBag.SurveyResults)
             {
-                <p>@s</p>;
+                <tr>
+                    <td>@newsurvey.name</td>
+                    <td>@newsurvey.dojolocation</td>
+                    <td>@newsurvey.language</td>
+                    <td>@newsurvey.text</td>
+                </tr>
             }
         }
+        </table>
 
-        <a href="/" class="btn btn-primary">Back</a>
+
+        
+        @* @{
+            
+            foreach(var newsurvey in ViewBag.SurveyResults)
+            {
+                <p>@newsurvey</p>;
+            }
+        } *@
+
+        <a href="/" class="btn btn-primary mt-5 float-end">Back</a>
     </div>
 </body>
 </html>
