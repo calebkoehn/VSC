@@ -29,3 +29,4 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/DojoSurvey/obj/Debug/netcoreapp3.1/DojoSurvey.Views.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/DojoSurvey/obj/Debug/netcoreapp3.1/DojoSurvey.csproj.CopyComplete
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/First/Result.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/DojoSurvey/obj/Debug/netcoreapp3.1/Razor/Views/First/_ViewImports.cshtml.g.cs

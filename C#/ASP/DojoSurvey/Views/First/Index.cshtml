@@ -1,3 +1,5 @@
+@model Survey
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +21,8 @@
         <form action="addSurvey" method="post" class="custom-centered">
             <div class="form-group mt-5">
                 <label for="name">Your Name:</label>
-                <input type="name" class="form-control" id="name" placeholder="Enter name" name="name">
+                <input asp-for="name" type="name" class="form-control" id="name" placeholder="Enter name">
+                <span asp-validation-for="name" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label for="dojolocation"> Dojo Location: </label>
@@ -31,6 +34,8 @@
                     <option>Seattle</option>
                     <option>San Jose</option>
                 </select>
+                <span asp-validation-for="dojolocation" class="text-danger"></span>
+
             </div>
             <div class="form-group">
                 <label for="language">Favorite Language: </label>
@@ -42,10 +47,13 @@
                     <option>HTML</option>
                     <option>Java</option>
                 </select>
+                <span asp-validation-for="language" class="text-danger"></span>
+
             </div>
             <div class="form-group">
                 <label for="text">Comment (Optional): </label>
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="text"></textarea>
+                <span asp-validation-for="text" class="text-danger"></span>
             </div>
         
             <button type="submit" class="btn btn-primary mt-5">Submit</button>

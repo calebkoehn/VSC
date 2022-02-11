@@ -13,21 +13,18 @@ namespace DojoSurvey.Controllers     //be sure to use your own project's namespa
         {
             return View("Index");
         }
-        //[HttpPost("firstpost")]
-        // public IActionResult firstpost(string name,string dojolocation, string language, string text)
-        // {
-        //     SurveyResults.Add(name);
-        //     SurveyResults.Add(dojolocation);
-        //     SurveyResults.Add(language);
-        //     SurveyResults.Add(text);
-        //     return RedirectToAction("Result");
-        // }
 
         [HttpPost("addSurvey")]
         public IActionResult addSurvey(Survey newSurvey)
         {
-            SurveyResults.Add(newSurvey);
-            return RedirectToAction("Result");
+            if(ModelState.IsValid)
+            {
+                SurveyResults.Add(newSurvey);
+                return RedirectToAction("Result");
+            } else {
+                ViewBag.SurveyResults = SurveyResults;
+                return View("Index");
+            }
         }
 
         [HttpGet]       //type of request
