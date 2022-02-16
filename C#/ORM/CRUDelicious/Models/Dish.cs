@@ -8,7 +8,6 @@ namespace CRUDelicious.Models
         public int DishId { get; set; }
 
         [Required]
-        [MinLength(3,ErrorMessage ="Name Field should have more than 3 characters!")]
         public string Name { get; set; }
 
         [Required]

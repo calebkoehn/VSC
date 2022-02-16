@@ -25,7 +25,7 @@ namespace CRUDelicious.Controllers
             return View();
         }
         [HttpGet("New")]
-        public IActionResult New(Dish newDish)
+        public IActionResult New()
         {
             
             return View("New");
