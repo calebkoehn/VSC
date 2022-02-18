@@ -1,0 +1,50 @@
+@model Dish
+<div class="text-right">
+    <a href="/Dishes" class="btn btn-primary">Home</a>
+</div>
+
+<div class="text-center">
+<h1>Add A Dish!</h1>
+    <form action="/addDish" method="post">
+        <div class="form-group">
+            <label for="Name">Name</label>
+            <input asp-for="Name" class="form-control">
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label for="Calories"># of Calories</label>
+            <input asp-for="Calories" class="form-control">
+            <span asp-validation-for="Calories" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+        <label for="ChefId">Chef</label>
+        <select asp-for="ChefId" class="form-control">
+            @{
+                foreach(Chef p in ViewBag.allChefs)
+                {
+                    <option value="@p.ChefId">@p.FirstName</option>
+                }
+            }
+        </select>
+        </div>
+        <div class="form-group">
+            <label for="Description">Description</label>
+            <input asp-for="Description" class="form-control">
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+        <div class="dropdown">
+            <label for="Tastiness">Tastiness</label>
+            <select name="Tastiness" id="Tastiness">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <span asp-validation-for="Tastiness" class="text-danger"></span>
+        </div>
+        <div class="form-group mt-3">
+            <input type="submit" name="Submit" class="btn btn-primary">
+        </div>
+    </form>
+</div>
