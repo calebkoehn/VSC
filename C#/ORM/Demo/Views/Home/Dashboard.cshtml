@@ -1,0 +1,55 @@
+@model Creature
+<h1>All creature owners</h1>
+<ul>
+    @{
+        foreach(Person p in ViewBag.AllPeople)
+        {
+            <li>@p.Name | @p.Age</li>
+            <ul>
+                @{
+                    foreach(Creature c in p.Pets)
+                    {
+                        <li>@c.Name the @c.Species</li>
+                    }
+                }
+            </ul>
+        }
+    }
+</ul>
+<hr>
+<form action="/addCreature" method="post">
+    <div class="form-group">
+        <label for="Name">Name</label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Species">Species</label>
+        <input asp-for="Species" class="form-control">
+        <span asp-validation-for="Species" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Picture">Picture</label>
+        <input asp-for="Picture" class="form-control">
+        <span asp-validation-for="Picture" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="Age">Age</label>
+        <input asp-for="Age" class="form-control">
+        <span asp-validation-for="Age" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label for="PersonId">Owner</label>
+        <select asp-for="PersonId" class="form-control">
+            @{
+                foreach(Person p in ViewBag.AllPeople)
+                {
+                    <option value="@p.PersonId">@p.Name</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Submit" class="btn btn-submit">
+    </div>
+</form>

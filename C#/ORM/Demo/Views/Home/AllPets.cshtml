@@ -1,0 +1,17 @@
+<h1>All Pets</h1>
+<div class="d-flex flex-wrap">
+
+    @{
+        foreach(Creature c in ViewBag.AllPets)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="@c.Picture" class="card-img-top" style="height: 200px; object-fit: contain" alt="@c.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@c.Name</h5>
+                    <p class="card-text">Age: @c.Age</p>
+                    <p>Owner: @c.Owner.Name</p>
+                </div>
+            </div>
+        }
+    }
+</div>
