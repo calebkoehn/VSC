@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Collector
+
+<div class="text-center">
+    <h1>Collectors</h1>
+    <div class="row">
+        <div class="col">
+            <form action="/addCollector" method="post">
+                <div class="form-group">
+                    <label for="Name">Name</label>
+                    <input asp-for="Name" class="form-control">
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Submit" class="btn btn-danger">
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <h2>All collectors</h2>
+            <table class="table table-striped">
+                <tr>
+                    <th>Name</th>
+                    <th># of Albums</th>
+                </tr>
+                @{
+                    foreach(Collector c in ViewBag.AllCollectors)
+                    {
+                        <tr>
+                            <td><a href="/collector/@c.CollectorId">@c.Name</a></td>
+                            <td>@c.MyCollection.Count</td>
+                        </tr>
+                    }
+                }
+            </table>
+        </div>
+    </div>
+</div>
