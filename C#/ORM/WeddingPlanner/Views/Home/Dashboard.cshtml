@@ -1,0 +1,33 @@
+@model PlanWedding
+<div class="text-right">
+    <a href="/logout" class="btn btn-danger">Logout</a>
+</div>
+<h1 class="text-center">Welcome to the Wedding Planner</h1>
+
+<hr>
+<table class="table table-striped">
+    <tr>
+        <th>Wedding</th>
+        <th>Date</th>
+        <th>Guests</th>
+        <th>Action</th>
+    </tr>
+    @{
+        foreach(Wedding w in Model.PlanWedding)
+        {
+            <tr>
+                <td>@w.PlanWedding.WedderOne & @w.PlanWedding.WedderTwo</td>
+            </tr>
+            <tr>
+                <td>@w.PlanWedding.Date </td>
+            </tr>
+            <tr>
+                <td>@w.PlanWedding.GuestList.Count</td>
+            </tr>
+        }
+    }
+</table>
+<hr>
+<div class="text-right">
+    <a href="/NewWedding" class="btn btn-primary">New Wedding</a>
+</div>

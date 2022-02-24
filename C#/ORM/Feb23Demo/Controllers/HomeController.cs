@@ -84,7 +84,7 @@ namespace Feb23Demo.Controllers
                 User Seller = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
                 return RedirectToAction("Index");
             }
-            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            ViewBag.LoggedInUser = _context.Users.Include(d => d.Inventory).Include(f => f.MyOrders).ThenInclude(g => g.Product).FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
             return View();
         }
         [HttpGet("AddProduct")]
@@ -99,6 +99,8 @@ namespace Feb23Demo.Controllers
         {
             if(ModelState.IsValid)
             {
+                _context.Products.Add(newProduct);
+                _context.SaveChanges();
                 return RedirectToAction("Dashboard");
 
             } else{
@@ -125,6 +127,7 @@ namespace Feb23Demo.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            ViewBag.Product = _context.Products.FirstOrDefault( f => f.ProductId == pid);
             return View();
         }
         [HttpGet("Product/Edit/{pid}")]
@@ -135,18 +138,26 @@ namespace Feb23Demo.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            Product oldProduct = _context.Products.FirstOrDefault(d=> d.ProductId == pid);
             
-            
-            return View();
+            return View(oldProduct);
         }
         [HttpPost("Product/Update/{pid}")]
         public IActionResult UpdateProduct(int pid, Product UpdatedProduct)
         {
+            Product oldProduct = _context.Products.FirstOrDefault(d=> d.ProductId == pid);
             if(ModelState.IsValid)
             {
-                return RedirectToAction("Dashboard");
+                oldProduct.ProductName = UpdatedProduct.ProductName;
+                oldProduct.Picture = UpdatedProduct.Picture;
+                oldProduct.Quantity = UpdatedProduct.Quantity;
+                oldProduct.Price = UpdatedProduct.Price;
+                oldProduct.UpdatedAt = DateTime.Now;
+                _context.SaveChanges();
+                return Redirect($"/Product/{pid}");
             } else {
-                return View("EditProduct");
+                ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+                return View("EditProduct", oldProduct);
             }
         }
         [HttpGet("Product/Delete/{pid}")]

@@ -10,7 +10,13 @@
                 <div class="card-body">
                     <h5> <a href="/Product/@p.ProductId">@p.ProductName</a></h5>
                     <p>$@p.Price</p>
-                    <p>In Stock: @p.Quantity</p>
+                    @{
+                        if(p.Quantity > 0){
+                            <p class="card-text">In Stock: @p.Quantity</p>
+                        } else {
+                            <p class="card-text text-danger">Out Of Stock</p>
+                        }
+                    }
                     <a href="/Product/Edit/@p.ProductId" class="btn btn-info">Edit</a>
                     <a href="/Product/Delete/@p.ProductId" class="btn btn-danger">Delete</a>
                 </div>
@@ -29,8 +35,7 @@
                 <div class="card-body">
                     <h5> <a href="/Product/@p.ProductId">@p.Product.ProductName</a></h5>
                     <p>$@p.Product.Price</p>
-                    <p>In Stock: @p.Product.Quantity</p>
-                    <p class="card-text">Order Total:$(@p.Product.Price@p.Quantity)</p>
+                    <p class="card-text">Order Total:$@(p.Product.Price*p.Quantity)</p>
                     <p class="card-text">You Ordered:@p.Quantity</p>
                 </div>
             </div>

@@ -14412,8 +14412,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/Dashboard.cshtml",
+      "TargetPath": "Views\\Home\\Dashboard.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14424,6 +14434,11 @@
     {
       "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/NewWedding.cshtml",
+      "TargetPath": "Views\\Home\\NewWedding.cshtml",
       "FileKind": "mvc"
     },
     {

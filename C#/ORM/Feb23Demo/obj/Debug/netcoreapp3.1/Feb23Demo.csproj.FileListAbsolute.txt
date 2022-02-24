@@ -60,6 +60,6 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Feb23Demo.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Feb23Demo.genruntimeconfig.cache
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Razor/Views/Home/AddProduct.cshtml.g.cs
-/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Razor/Views/Home/AllProduct.cshtml.g.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Razor/Views/Home/EditProduct.cshtml.g.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Razor/Views/Home/OneProduct.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/obj/Debug/netcoreapp3.1/Razor/Views/Home/AllProducts.cshtml.g.cs

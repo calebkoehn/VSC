@@ -14422,8 +14422,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/Views/Home/AllProduct.cshtml",
-      "TargetPath": "Views\\Home\\AllProduct.cshtml",
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/Feb23Demo/Views/Home/AllProducts.cshtml",
+      "TargetPath": "Views\\Home\\AllProducts.cshtml",
       "FileKind": "mvc"
     },
     {

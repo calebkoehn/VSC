@@ -1,0 +1,34 @@
+<h2>Your Products</h2>
+<div class="row">
+    <div class="card col" style="width: 18rem;">
+        <img src="@ViewBag.Product.Picture" class="card-img-top" alt="@ViewBag.Product.ProductName">
+        <div class="card-body">
+            <h5>@ViewBag.Product.ProductName</a></h5>
+            <p>$@ViewBag.Product.Price</p>
+            <p>In Stock: @ViewBag.Product.Quantity</p>
+            
+        </div>
+    </div>
+    <div class="col">
+        <h2>Actions</h2>
+        @{
+            if(ViewBag.LoggedInUser.UserId == ViewBag.Product.UserId)
+            {
+                <a href="/Product/Edit/@ViewBag.Product.ProductId" class="btn btn-info">Edit</a>
+                <a href="/Product/Delete/@ViewBag.Product.ProductId" class="btn btn-danger">Delete</a>
+            } else {
+                if(ViewBag.Product.Quantity > 0)
+                {
+                    <form action="/Product/Buy" method="post">
+                    <input type="number" name="Quantity" max="@ViewBag.Product.Quantity" class="form-control">
+                    <input type="hidden" name="UserId" value="@ViewBag.LoggedInUser.UserId">
+                    <input type="hidden" name="ProductId" value="@ViewBag.Product.ProductId">
+                    <input type="submit" value="Buy" class="btn btn-success">
+                    </form>
+                } else {
+                    <h3 class="text-danger">Out Of Stock</h3>
+                }
+            }
+        }
+    </div>
+</div>
