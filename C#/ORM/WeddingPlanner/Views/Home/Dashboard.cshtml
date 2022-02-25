@@ -1,4 +1,4 @@
-@model PlanWedding
+@model List<PlanWedding>
 <div class="text-right">
     <a href="/logout" class="btn btn-danger">Logout</a>
 </div>
@@ -13,19 +13,30 @@
         <th>Action</th>
     </tr>
     @{
-        foreach(Wedding w in Model.PlanWedding)
+        foreach(PlanWedding w in Model)
         {
             <tr>
-                <td>@w.PlanWedding.WedderOne & @w.PlanWedding.WedderTwo</td>
-            </tr>
-            <tr>
-                <td>@w.PlanWedding.Date </td>
-            </tr>
-            <tr>
-                <td>@w.PlanWedding.GuestList.Count</td>
+                <td><a href="/Wedding/@w.PlanWeddingId">@w.WedderOne & @w.WedderTwo</a></td>
+                <td>@w.Date </td>
+                <td>@w.GuestList.Count</td>
+                <td>
+                    @{
+                        if(ViewBag.LoggedInUser.UserId == w.UserId){
+                            <a href="/Delete/@w.PlanWeddingId" class="text-danger">Delete</a>
+                        } else {
+                            if(w.GuestList.Any(r => r.UserId == ViewBag.LoggedInUser.UserId)){
+                                <a href="/unrsvp/@w.PlanWeddingId/@ViewBag.LoggedInUser.UserId">UnRSVP</a>
+                            } else {
+                                <a href="/rsvp/@w.PlanWeddingId">RSVP</a>
+                            }
+                            
+                        }
+                    }
+                </td>
             </tr>
         }
     }
+
 </table>
 <hr>
 <div class="text-right">

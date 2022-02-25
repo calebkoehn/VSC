@@ -84,8 +84,8 @@ namespace WeddingPlanner.Controllers
                 return RedirectToAction("Index");
             }
             ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
-            ViewBag.AllWeddings = _context.Weddings.ToList();
-            return View();
+            List <PlanWedding> AllWeddings = _context.PlanWeddings.Include(g => g.GuestList).ToList();
+            return View(AllWeddings);
         }
         [HttpGet("NewWedding")]
         public IActionResult NewWedding()
@@ -101,11 +101,71 @@ namespace WeddingPlanner.Controllers
                 _context.PlanWeddings.Add(newWedding);
                 _context.SaveChanges();
                 return RedirectToAction("Dashboard");
-
             } else{
                 return View("NewWedding");
             }
         }
+        [HttpGet("Wedding/{wid}")]
+        public IActionResult OneWedding(int wid)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            ViewBag.Wedding = _context.PlanWeddings.FirstOrDefault( f => f.PlanWeddingId == wid);
+            return View();
+        }
+        [HttpGet("Logout")]
+        public IActionResult Logout()
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+        }
+        [HttpGet("/Delete/{wid}")]
+        public RedirectToActionResult DeleteWedding(int wid)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            PlanWedding WeddingToDelete = _context.PlanWeddings.SingleOrDefault(f => f.PlanWeddingId == wid);
+            _context.PlanWeddings.Remove(WeddingToDelete);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+        [HttpGet("rsvp/{PlanWeddingId}")]
+        public RedirectToActionResult rsvp(int PlanWeddingId)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            User LoggedInUser = _context.Users.FirstOrDefault(u => u.Email == HttpContext.Session.GetString("UserEmail"));
+            Wedding NewRsvp = new Wedding();
+            NewRsvp.UserId = LoggedInUser.UserId;
+            NewRsvp.PlanWeddingId = PlanWeddingId;
+            _context.Add(NewRsvp);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+        [HttpGet("unrsvp/{PlanWeddingId}/{userid}")]
+        public RedirectToActionResult unrsvp(int PlanWeddingId,int userid)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            Wedding RSVPToDelete = _context.Weddings.FirstOrDefault(u => u.PlanWeddingId == PlanWeddingId && u.UserId == userid);
+            _context.Remove(RSVPToDelete);
+            _context.SaveChanges();
+            return RedirectToAction("Dashboard");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

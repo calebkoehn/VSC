@@ -14417,6 +14417,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/OneWedding.cshtml",
+      "TargetPath": "Views\\Home\\OneWedding.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
       "FileKind": "mvc"

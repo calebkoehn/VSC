@@ -60,3 +60,4 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/obj/Debug/netcoreapp3.1/Razor/Views/Home/Dashboard.cshtml.g.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Login.cshtml.g.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/obj/Debug/netcoreapp3.1/Razor/Views/Home/NewWedding.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/WeddingPlanner/obj/Debug/netcoreapp3.1/Razor/Views/Home/OneWedding.cshtml.g.cs
