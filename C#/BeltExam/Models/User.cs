@@ -10,9 +10,8 @@ namespace BeltExam.Models
         [Key]
         public int UserId {get;set;}
         [Required]
-        public string FirstName {get;set;}
-        [Required]
-        public string LastName {get;set;}
+        [MinLength(2)]
+        public string Name {get;set;}
 
         [Required]
         [EmailAddress]
@@ -25,6 +24,8 @@ namespace BeltExam.Models
 
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
+        public List<Association> ParticipantList {get;set;}
+        public List<DojoActivity> OrganizerList {get;set;}
 
         [NotMapped]
         [Compare("Password")]

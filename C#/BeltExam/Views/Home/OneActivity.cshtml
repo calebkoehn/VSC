@@ -1,0 +1,17 @@
+@model List<DojoActivity>
+@* @model List<User> *@
+
+<div class="text-right">
+    <a href="/Dashboard" class="btn btn-primary">Home</a>
+    <a href="/logout" class="btn btn-danger">Logout</a>
+</div>
+<h1 class="text-center">@ViewBag.Activity.Title</h1>
+<h3>Event Coordinator: @ViewBag.Activity.Organizer.Name</h3>
+<h4>Description: @ViewBag.Activity.Description</h4>
+<h4>Participants:
+    @{
+        foreach(var m in ViewBag.Activity.DojoEventList){
+            <p>@m.User.Name</p>
+        }
+    }
+</h4>

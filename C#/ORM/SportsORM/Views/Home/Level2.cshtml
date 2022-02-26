@@ -12,5 +12,135 @@
             <li>...all leagues with a (current) player named "Sophia"</li>
             <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
         </ol>
+        <h1 class="text-center mt-5">All Teams in the Atlantic Soccer Conference</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>Team Name</th>
+                <th>Location</th>
+            </tr>
+            @{
+                foreach(Team a in ViewBag.AtlanticSoccer)
+                {
+                    <tr>
+                        <td>@a.TeamName</td>
+                        <td>@a.Location</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">All Current Players for the Boston Penguins</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.CurrentBP)
+                {
+                    <tr>
+                        <td>@a.FirstName</td>
+                        <td>@a.LastName</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">All Current Players in the International Collegiate Baseball Conference</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.CurrentICBC)
+                {
+                    <tr>
+                        <td>@a.FirstName</td>
+                        <td>@a.LastName</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">All Current Players in the American Conference of Amateur Football with the Last Name of Lopez</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>Last Name</th>
+                <th>League</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.CurrentACAFL)
+                {
+                    <tr>
+                        <td>@a.LastName</td>
+                        <td>@a.CurrentTeam.TeamName</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">All Football Players</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Sport</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.AllFootball)
+                {
+                    <tr>
+                        <td>@a.FirstName</td>
+                        <td>@a.LastName</td>
+                        <td>@a.CurrentTeam.CurrLeague.Sport</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">All Current Teams with a player named Sophia</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>Team</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.TeamSophia)
+                {
+                    <tr>
+                        <td>@a.FirstName</td>
+                        <td>@a.CurrentTeam.TeamName</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">All Current Leagues with a player named Sophia</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>First Name</th>
+                <th>League</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.LeagueSophia)
+                {
+                    <tr>
+                        <td>@a.FirstName</td>
+                        <td>@a.CurrentTeam.CurrLeague.Name</td>
+                    </tr>
+                }
+            }
+        </table>
+        <h1 class="text-center mt-5">Everyone with the last name of Flores except for current players of the Washington Roughriders</h1>
+        <table class="table table-striped">
+            <tr>
+                <th>Last Name</th>
+                <th>Team Name</th>
+            </tr>
+            @{
+                foreach(Player a in ViewBag.Flores)
+                {
+                    <tr>
+                        <td>@a.LastName</td>
+                        <td>@a.CurrentTeam.TeamName</td>
+                    </tr>
+                }
+            }
+        </table>
     </div>
 </div>

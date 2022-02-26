@@ -14412,6 +14412,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/Views/Home/NewActivity.cshtml",
+      "TargetPath": "Views\\Home\\NewActivity.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/Views/Home/OneActivity.cshtml",
+      "TargetPath": "Views\\Home\\OneActivity.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

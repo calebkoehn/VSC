@@ -4,6 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using SportsORM.Models;
 
 
@@ -52,6 +53,14 @@ namespace SportsORM.Controllers
         [HttpGet("level_2")]
         public IActionResult Level2()
         {
+            ViewBag.AtlanticSoccer = _context.Teams.Include(a => a.CurrLeague).Where(a => a.CurrLeague.Name == "Atlantic Soccer Conference");
+            ViewBag.CurrentBP = _context.Players.Include(p => p.CurrentTeam).Where(p => p.CurrentTeam.Location == "Boston" && p.CurrentTeam.TeamName == "Penguins");
+            ViewBag.CurrentICBC = _context.Players.Include(d => d.CurrentTeam.CurrLeague).Where(d => d.CurrentTeam.CurrLeague.Name == "International Collegiate Baseball Conference");
+            ViewBag.CurrentACAFL = _context.Players.Include(d => d.CurrentTeam.CurrLeague).Where(d => d.CurrentTeam.CurrLeague.Name == "American Conference of Amateur Football" && d.LastName =="Lopez");
+            ViewBag.AllFootball = _context.Players.Include(d => d.CurrentTeam.CurrLeague).Where(d => d.CurrentTeam.CurrLeague.Sport =="Football");
+            ViewBag.TeamSophia = _context.Players.Include(d => d.CurrentTeam.CurrentPlayers).Where(d => d.FirstName == "Sophia");
+            ViewBag.LeagueSophia = _context.Players.Include(d => d.CurrentTeam.CurrLeague).Where(d => d.FirstName == "Sophia");
+            ViewBag.Flores = _context.Players.Include(d => d.CurrentTeam.CurrLeague).Where(d => d.LastName == "Flores" & !d.CurrentTeam.TeamName.Contains("Washington Roughriders"));
             return View();
         }
 

@@ -59,3 +59,5 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/obj/Debug/netcoreapp3.1/BeltExam.dll
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/obj/Debug/netcoreapp3.1/BeltExam.pdb
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/obj/Debug/netcoreapp3.1/BeltExam.genruntimeconfig.cache
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/obj/Debug/netcoreapp3.1/Razor/Views/Home/NewActivity.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/obj/Debug/netcoreapp3.1/Razor/Views/Home/OneActivity.cshtml.g.cs

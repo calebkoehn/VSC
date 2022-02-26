@@ -1,4 +1,50 @@
+@model List<DojoActivity>
 <div class="text-right">
+    <h3 class="text-center">Welcome, @ViewBag.LoggedInUser.Name!</h3>
     <a href="/logout" class="btn btn-danger">Logout</a>
 </div>
-<h1>You made it!</h1>
+<h1 class="text-left">Dojo Activity Center</h1>
+
+<hr>
+<table class="table table-striped">
+    <tr>
+        <th>Activity</th>
+        <th>Date and Time</th>
+        <th>Duration</th>
+        <th>Event Coordinator</th>
+        <th>No. of Participants</th>
+        <th>Actions</th>
+    </tr>
+    @{
+        foreach(DojoActivity w in Model)
+        {
+            <tr>
+                <td><a href="/Activity/@w.DojoActivityId">@w.Title</a></td>
+                <td>@w.Date.ToString("M/d @")@w.Time.ToString("h:m tt") </td>
+                <td>@w.Duration @w.DurationAmount</td>
+                <td>@w.Organizer.Name</td>
+                <td>@w.DojoEventList.Count</td>
+                <td>
+                    @{
+                        if(ViewBag.LoggedInUser.UserId == w.UserId){
+                            <a href="/Delete/@w.DojoActivityId" class="text-danger">Delete</a>
+                        } else {
+                            if(w.DojoEventList.Any(r => r.UserId == ViewBag.LoggedInUser.UserId)){
+                                <a href="/leave/@w.DojoActivityId/@ViewBag.LoggedInUser.UserId">Leave</a>
+                            } else {
+                                <a href="/join/@w.DojoActivityId">Join</a>
+                            }
+                            
+                        }
+                    }
+                </td>
+            </tr>
+        }
+    }
+</table>
+<hr>
+
+
+<div class="text-right">
+    <a href="/NewActivity" class="btn btn-primary">Add New Activity</a>
+</div>
