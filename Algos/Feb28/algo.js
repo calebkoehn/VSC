@@ -34,5 +34,17 @@ class Trie {
         runner.isWord=true;
         console.log("word added");
     }
+    betterAdd(word) {
+        let runner = this.root;
+        for (let letter = 0; letter < word.length; letter++) {
+            let idx = word[letter].toLowerCase().charCodeAt(0) - 97;
+            if (runner.children[idx] == null) {
+                runner.children[idx] = new TrieNode(word[letter]);
+            }
+            runner = runner.children[idx];
+        }
+        runner.isWord = true;
+        console.log(`${word} added successfully`);
+    }
 }
 
