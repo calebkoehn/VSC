@@ -24,6 +24,8 @@ namespace Project.Models
 
         public DateTime CreatedAt {get;set;} = DateTime.Now;
         public DateTime UpdatedAt {get;set;} = DateTime.Now;
+        public List<Product> Inventory {get;set;}
+        public List<Order> MyOrders {get;set;}
 
         [NotMapped]
         [Compare("Password")]

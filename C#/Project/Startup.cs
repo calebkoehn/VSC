@@ -24,6 +24,7 @@ namespace Project
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddSession();
             services.AddDbContext<MyContext>(options => options.UseMySql (Configuration["DBInfo:ConnectionString"]));
             services.AddControllersWithViews();
         }
@@ -39,6 +40,8 @@ namespace Project
             {
                 app.UseExceptionHandler("/Home/Error");
             }
+            app.UseSession();
+            
             app.UseStaticFiles();
 
             app.UseRouting();

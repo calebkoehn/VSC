@@ -77,6 +77,127 @@ namespace Project.Controllers
             }
         }
 
+        [HttpGet("Dashboard")]
+        public IActionResult Dashboard ()
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                User Seller = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.Include(d => d.Inventory).Include(f => f.MyOrders).ThenInclude(g => g.Product).FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            return View();
+        }
+        [HttpGet("AddProduct")]
+        public IActionResult AddProduct()
+        {
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            return View();
+        }
+
+        [HttpPost("AddProductToDB")]
+        public IActionResult AddProductToDb(Product newProduct)
+        {
+            if(ModelState.IsValid)
+            {
+                _context.Products.Add(newProduct);
+                _context.SaveChanges();
+                return RedirectToAction("Dashboard");
+
+            } else{
+                return View("AddProduct");
+            }
+        }
+
+        [HttpGet("AllProducts")]
+        public IActionResult AllProducts()
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            ViewBag.AllProducts = _context.Products.ToList();
+            return View();
+        }
+        [HttpGet("Product/{pid}")]
+        public IActionResult OneProduct(int pid)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            ViewBag.Product = _context.Products.FirstOrDefault( f => f.ProductId == pid);
+            return View();
+        }
+        [HttpGet("Product/Edit/{pid}")]
+        public IActionResult EditProduct(int pid)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            Product oldProduct = _context.Products.FirstOrDefault(d=> d.ProductId == pid);
+            
+            return View(oldProduct);
+        }
+        [HttpPost("Product/Update/{pid}")]
+        public IActionResult UpdateProduct(int pid, Product UpdatedProduct)
+        {
+            Product oldProduct = _context.Products.FirstOrDefault(d=> d.ProductId == pid);
+            if(ModelState.IsValid)
+            {
+                oldProduct.ProductName = UpdatedProduct.ProductName;
+                oldProduct.Picture = UpdatedProduct.Picture;
+                oldProduct.Quantity = UpdatedProduct.Quantity;
+                oldProduct.Price = UpdatedProduct.Price;
+                oldProduct.UpdatedAt = DateTime.Now;
+                _context.SaveChanges();
+                return Redirect($"/Product/{pid}");
+            } else {
+                ViewBag.LoggedInUser = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+                return View("EditProduct", oldProduct);
+            }
+        }
+        [HttpGet("Product/Delete/{pid}")]
+        public IActionResult DeleteProduct(int pid)
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            Product ProductToDelete = _context.Products.SingleOrDefault(f => f.ProductId == pid);
+            _context.Products.Remove(ProductToDelete);
+            _context.SaveChanges();
+            return View("Dashboard");
+        }
+        [HttpGet("Logout")]
+        public IActionResult Logout()
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                return RedirectToAction("Index");
+            }
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index");
+        }
+        [HttpPost("Product/buy")]
+        public IActionResult BuyProduct(Order newOrder)
+        {
+            Product ProductToBuy = _context.Products.FirstOrDefault(d => d.ProductId == newOrder.ProductId);
+            if(ModelState.IsValid)
+            {
+                _context.Orders.Add(newOrder);
+                ProductToBuy.Quantity -= newOrder.Quantity;
+                _context.SaveChanges();
+                return RedirectToAction("Dashboard");
+            } else {
+                return View("OneProduct", newOrder.ProductId);
+            }
+        }
+
         
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
