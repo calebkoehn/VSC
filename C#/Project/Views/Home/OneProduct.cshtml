@@ -1,4 +1,5 @@
-<h2>Your Products</h2>
+<h1 class="text-center text-primary">@ViewBag.Product.ProductName</h1>
+<hr>
 <div class="row">
     <div class="card col" style="width: 18rem;">
         <img src="@ViewBag.Product.Picture" class="card-img-top" alt="@ViewBag.Product.ProductName">
@@ -23,7 +24,7 @@
                     <input type="number" name="Quantity" max="@ViewBag.Product.Quantity" class="form-control">
                     <input type="hidden" name="UserId" value="@ViewBag.LoggedInUser.UserId">
                     <input type="hidden" name="ProductId" value="@ViewBag.Product.ProductId">
-                    <input type="submit" value="Buy" class="btn btn-success">
+                    <input type="submit" value="Buy" class="btn btn-success text-center mt-5">
                     </form>
                 } else {
                     <h3 class="text-danger">Out Of Stock</h3>

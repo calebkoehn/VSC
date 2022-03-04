@@ -88,6 +88,18 @@ namespace Project.Controllers
             ViewBag.LoggedInUser = _context.Users.Include(d => d.Inventory).Include(f => f.MyOrders).ThenInclude(g => g.Product).FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
             return View();
         }
+
+        [HttpGet("YourOrder")]
+        public IActionResult YourOrder ()
+        {
+            if(HttpContext.Session.GetString("UserEmail")== null)
+            {
+                User Seller = _context.Users.FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+                return RedirectToAction("Index");
+            }
+            ViewBag.LoggedInUser = _context.Users.Include(d => d.Inventory).Include(f => f.MyOrders).ThenInclude(g => g.Product).FirstOrDefault(d => d.Email == HttpContext.Session.GetString("UserEmail"));
+            return View();
+        }
         [HttpGet("AddProduct")]
         public IActionResult AddProduct()
         {

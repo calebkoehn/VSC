@@ -14462,6 +14462,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/Views/Home/YourOrder.cshtml",
+      "TargetPath": "Views\\Home\\YourOrder.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

@@ -1,5 +1,6 @@
 @model Product
-<h1>Add Product</h1>
+<h1 class="text-center">Add Product</h1>
+<hr>
 <form action="/AddProductToDB" method="post">
     <div class="form-group">
         <label for="ProductName"> Product Name</label>
@@ -22,7 +23,7 @@
         <span asp-validation-for="Price" class="text-danger"></span>
     </div>
     <input type="hidden" name="UserId" value="@ViewBag.LoggedInUser.UserId">
-    <div class="form-group">
+    <div class="form-group text-center">
         <input type="submit" name="Add Product" class="btn btn-primary">
     </div>
 </form>

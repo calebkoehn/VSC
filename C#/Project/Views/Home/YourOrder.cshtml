@@ -1,0 +1,18 @@
+<h2 class="text-center">My Orders</h2>
+<hr>
+<div class="d-flex flex-wrap">
+    @{
+        foreach(Order p in ViewBag.LoggedInUser.MyOrders)
+        {
+            <div class="card" style="width: 18rem;">
+                <img src="@p.Product.Picture" class="card-img-top" alt="@p.Product.ProductName">
+                <div class="card-body">
+                    <h5> <a href="/Product/@p.ProductId">@p.Product.ProductName</a></h5>
+                    <p>$@p.Product.Price</p>
+                    <p class="card-text">Order Total:$@(p.Product.Price*p.Quantity)</p>
+                    <p class="card-text">You Ordered:@p.Quantity</p>
+                </div>
+            </div>
+        }
+    }
+</div>

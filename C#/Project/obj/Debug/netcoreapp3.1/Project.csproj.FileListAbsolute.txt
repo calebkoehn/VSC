@@ -63,3 +63,4 @@
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/EditProduct.cshtml.g.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/OneProduct.cshtml.g.cs
 /Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/_Login.cshtml.g.cs
+/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/obj/Debug/netcoreapp3.1/Razor/Views/Home/YourOrder.cshtml.g.cs

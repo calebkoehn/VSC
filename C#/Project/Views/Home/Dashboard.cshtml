@@ -1,6 +1,7 @@
-<h1>Welcome @ViewBag.LoggedInUser.Name</h1>
+<h2 class="text-right">Welcome, <span class="text-primary">@ViewBag.LoggedInUser.Name</span></h2>
 
-<h2>Your Products</h2>
+<h1 class="text-center">Your Products</h1>
+<hr>
 <div class="d-flex flex-wrap">
     @{
         foreach(Product p in ViewBag.LoggedInUser.Inventory)
@@ -24,21 +25,4 @@
         }
     }
 </div>
-<hr>
-<h2>Your Orders</h2>
-<div class="d-flex flex-wrap">
-    @{
-        foreach(Order p in ViewBag.LoggedInUser.MyOrders)
-        {
-            <div class="card" style="width: 18rem;">
-                <img src="@p.Product.Picture" class="card-img-top" alt="@p.Product.ProductName">
-                <div class="card-body">
-                    <h5> <a href="/Product/@p.ProductId">@p.Product.ProductName</a></h5>
-                    <p>$@p.Product.Price</p>
-                    <p class="card-text">Order Total:$@(p.Product.Price*p.Quantity)</p>
-                    <p class="card-text">You Ordered:@p.Quantity</p>
-                </div>
-            </div>
-        }
-    }
-</div>
+
