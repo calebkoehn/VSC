@@ -23,7 +23,8 @@ const ninja1 = new Ninja("Hyabusa");
 ninja1.sayName();
 ninja1.showStats();
 ninja1.drinkSake();
-console.log("--------------------------------------------")
+console.log("--------------------------------------------");
+
 
 class Sensi extends Ninja{
     constructor(name){
@@ -42,4 +43,3 @@ class Sensi extends Ninja{
 const sensi1 = new Sensi("Master Splinter");
 sensi1.speakWisdom();
 sensi1.showStats();
-
