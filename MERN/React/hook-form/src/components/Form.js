@@ -43,17 +43,6 @@ const Form = (props) => {
         </div>
     );
 };
-const FormData = ({data}) => {
-    return(
-        <div>
-            <h2>Form Data</h2>
-            <p>First Name: {data.firstName}</p>
-            <p>Last Name: {data.lastName}</p>
-            <p>Email: {data.email}</p>
-            <p>Password: {data.password}</p>
-            <p>Confirm Password: {data.confirmPassword}</p>
-        </div>
-    )
-}
+
 
 export default Form
