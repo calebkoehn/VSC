@@ -33,7 +33,7 @@ const Form = (props) => {
                     <label htmlFor="email">Email: </label> 
                     <input type="email" className="form-control" onChange={onChangeHandler} name="email"/>
                     <p>
-                        {inputs.email.length > 0 && inputs.email.length < 2? "Email must be at least 2 characters.": ""}
+                        {inputs.email.length > 0 && inputs.email.length < 5? "Email must be at least 5 characters.": ""}
                     </p>
                 </div>
                 <div className="form-group">
