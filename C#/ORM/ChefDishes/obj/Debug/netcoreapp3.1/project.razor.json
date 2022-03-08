@@ -14427,8 +14427,8 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/Views/Home/new.cshtml",
-      "TargetPath": "Views\\Home\\new.cshtml",
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/Views/Home/New.cshtml",
+      "TargetPath": "Views\\Home\\New.cshtml",
       "FileKind": "mvc"
     },
     {
