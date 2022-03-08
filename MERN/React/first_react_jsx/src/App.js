@@ -6,7 +6,9 @@ function App() {
   return (
     <div className="App">
       <>
-        return <h1>Hello Dojo!</h1>
+        <h1>Hello Dojo!</h1>
+        <hr></hr>
+        <h2>Things I need to do:</h2>
         <li>Learn React</li>
         <li>Climb Mt. Everest</li>
         <li>Run a Marathon</li>
