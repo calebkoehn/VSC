@@ -1,13 +1,13 @@
 import React,{ useState } from "react";
 
 const Form = (props) => {
-    const {boxArray, setBoxArray} = props;
+    const {boxColor, setboxColor} = props;
     const [ color, setColor] = useState("");
     const [ size, setHSize, setWSize] = useState(200);
 
     const submitHandler = (event) => {
         event.preventDefault();
-        setBoxArray([...boxArray, {color: color, hSize: size + "px", wSize: size + "px",}]);
+        setboxColor([...boxColor, {color: color, hSize: size + "px", wSize: size + "px",}]);
         setColor("");
         setHSize(200);
         setWSize(200);

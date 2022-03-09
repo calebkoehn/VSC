@@ -4,12 +4,12 @@ import Form from './components/Form';
 import Display from './components/Display';
 
 function App() {
-  const [ boxArray, setBoxArray ]  = useState([])
+  const [ boxColor, setboxColor ]  = useState([])
   return (
     <div className="App">
       <h1>Color Box Generator</h1>
-      <Form boxArray={ boxArray } setBoxArray={ setBoxArray} />
-      <Display boxArray={ boxArray } />
+      <Form boxColor={ boxColor } setboxColor={ setboxColor} />
+      <Display boxColor={ boxColor } />
     </div>
   );
 }
