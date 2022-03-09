@@ -11,7 +11,7 @@ const Tab = props => {
         <div className='container'>
             <h1>A Very Cool Header.</h1> 
             {[1,2,3].map((val, index) => (<TabButton key={index} onClick={e => tabOnClick(e, val)} selected={state.selectedTab === val} >Tab {val}</TabButton>))}
-            <TabContent>Tab {state.selectedTab} is currently showing. </TabContent>
+            <TabContent>Tab {state.selectedTab} content is showing here. </TabContent>
         </div>
     )
 }
