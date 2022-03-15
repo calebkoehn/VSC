@@ -12,6 +12,7 @@ const Form = (props) => {
         setHSize(200);
         setWSize(200);
     }
+    
     return (
     <div className="container text-center col-6">
         <form onSubmit={ submitHandler }>
@@ -31,6 +32,8 @@ const Form = (props) => {
         </form>
     </div>
     )
+    
 }
+
 
 export default Form;
