@@ -2,13 +2,12 @@ import React, { useState } from 'react';
 
 const TaskList = () => {
     const [task, setTask] = useState('')
-    const [checkbox, setCheckbox] = useState(false)
     const [taskList, setTaskList] = useState([])
     const createTask = (e) => {
         e.preventDefault();
         let taskObject = {
             task: task,
-            checkbox: checkbox
+            checkbox: false
         };
         let updateTask = [...taskList, taskObject];
         setTaskList(updateTask);
@@ -40,7 +39,7 @@ const TaskList = () => {
                 taskList.map((item, d) => {
                     return (
                         <div className='form-group mt-4'>
-                            <input type="checkbox" onClick={()=>check(d)} />
+                            <input type="checkbox" onClick={()=>check(d)} checked={item.checkbox} />
                             <h4 className='ms-2' style={{display: 'inline', textDecoration: item.checkbox? 'line-through':''}} key={d}>{item.task}</h4>
                             <input type="button" className='btn btn-danger ms-3 mb-2' value="Delete" onClick={()=>deleteTask(d)} />
                         </div>
