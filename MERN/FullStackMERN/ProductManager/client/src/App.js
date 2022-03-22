@@ -7,6 +7,7 @@ import {
 import './App.css';
 import Main from './views/Main';
 import Detail from './views/Detail';
+import Update from './views/Update';
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route exact path="/products/:id">
             <Detail/>
+          </Route>
+          <Route exact path="/product/:id/edit">
+            <Update />
           </Route>
         </Switch>
       </BrowserRouter>

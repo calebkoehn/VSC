@@ -20,20 +20,23 @@ export default () => {
     }
     //onChange to update title and price
     return (
-        <form onSubmit={onSubmitHandler}>
-            <p>
-                <label>Title</label><br />
-                <input type="text" onChange={(e) => setTitle(e.target.value)} value={title} />
-            </p>
-            <p>
-                <label>Price</label><br />
-                <input type="text" onChange={(e) => setPrice(e.target.value)} value={price} />
-            </p>
-            <p>
-                <label>Description</label><br />
-                <input type="text" onChange={(e) => setDescription(e.target.value)} value={description} />
-            </p>
-            <input type="submit" />
-        </form>
+        <div className='container text-center col-4'>
+            <h1>Product Manager</h1>
+            <form onSubmit={onSubmitHandler}>
+                <div className='form-group'>
+                    <label className='h6 mt-3'>Title</label><br />
+                    <input type="text" className='form-control' onChange={(e) => setTitle(e.target.value)} value={title} />
+                </div>
+                <div className='form-group'>
+                    <label className='h6 mt-3'>Price</label><br />
+                    <input type="text" className='form-control' onChange={(e) => setPrice(e.target.value)} value={price} />
+                </div>
+                <div className='form-group'>
+                    <label className='h6 mt-3'>Description</label><br />
+                    <input type="text" className='form-control' onChange={(e) => setDescription(e.target.value)} value={description} />
+                </div>
+                <input type="submit" className='btn btn-primary mt-3 mb-5' value={"Create"} />
+            </form>
+        </div>
     )
 }
