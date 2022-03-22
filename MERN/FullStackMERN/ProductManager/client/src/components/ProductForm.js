@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 export default () => {
     //keep track of what is being typed via useState hook
+    
     const [title, setTitle] = useState("");
     const [price, setPrice] = useState("");
     const [description, setDescription] = useState("");
