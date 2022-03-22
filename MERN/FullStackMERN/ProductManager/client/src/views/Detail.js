@@ -1,18 +1,21 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useParams, Link } from "react-router-dom";
+import {useHistory} from 'react-router-dom';
     
 const Detail = (props) => {
     const [product, setProduct] = useState({})
     
     const {id} = useParams();
     const { removeFromDom } = props;
+    const history = useHistory();
 
     const deleteProduct = (productId) => {
         axios.delete('http://localhost:8000/api/product/' + productId)
             .then(res => {
                 removeFromDom(productId)
             })
+            history.push(`/products`)
             .catch(err => console.error(err));
     }
 

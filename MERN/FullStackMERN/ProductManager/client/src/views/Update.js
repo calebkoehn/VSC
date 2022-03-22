@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 
     
 const Update = (props) => {
@@ -8,6 +8,7 @@ const Update = (props) => {
     const [title, setTitle] = useState('');
     const [price, setPrice] = useState('');
     const [description, setDescription] = useState('');
+    const history = useHistory();
     
     useEffect(() => {
         axios.get('http://localhost:8000/api/product/' + id)
@@ -26,6 +27,7 @@ const Update = (props) => {
             description
         })
             .then(res => console.log(res))
+            history.push(`/products/${id}`)
             .catch(err => console.error(err));
     }
     
