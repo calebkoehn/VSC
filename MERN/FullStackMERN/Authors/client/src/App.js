@@ -5,7 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import './App.css';
-import { createBrowserHistory } from 'history';
+import { browserHistory } from 'history';
 import Add from './views/Add';
 import Main from './views/Main';
 import Update from './views/Update';
@@ -13,7 +13,7 @@ import Update from './views/Update';
 
 function App() {
 
-  const history = createBrowserHistory();
+  const history = browserHistory();
 
   return (
     <div className="App">
