@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import DeleteButton from './DeleteButton';
 import _ from 'lodash';
 import axios from 'axios';
-// import { getAllAuthors } from '../../../server/controllers/author.controller';
 
 const AuthorList = (props) => {
     
@@ -41,7 +40,7 @@ const AuthorList = (props) => {
                             <td>{author.name}</td>
                             <td><Link className='me-1 btn btn-primary me-2' to={'/edit/'+author._id}>Edit</Link>
                             
-                            <DeleteButton author={author} changeStyle= {false} removeAuthor = {removeAuthor} />
+                            <DeleteButton author={author} removeAuthor = {removeAuthor} />
                             </td>
                         </tr>
                     )}
