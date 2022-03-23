@@ -8,7 +8,6 @@ const Update = (props) => {
     const { id } = useParams();
     const [name, setName] = useState('');
     const [authorExist, setAuthorExist] = useState(false);
-    const history = useHistory();
     
     useEffect(() => {
         axios.get('http://localhost:8000/api/author/' + id)

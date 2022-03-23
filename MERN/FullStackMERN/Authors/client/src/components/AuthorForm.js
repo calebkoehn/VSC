@@ -5,7 +5,8 @@ import _ from 'lodash';
 
 
 const AuthorForm = (props) => {
-    const {formType, name, setName} = props;
+    const {formType} = props;
+    const [name, setName] = useState('');
 
     const [errorMessages, setErrorMessages] = useState('')
 
@@ -15,12 +16,12 @@ const AuthorForm = (props) => {
     useEffect(() => {
         console.log(formType)
         if (formType === "update") {
-            axios.get('http://localhost:8000/api/authors/' + params.id)
+            axios.get('http://localhost:8000/api/author/' + params.id)
                 .then(res => {
                     setName(res.data);
                 })
         }
-    }, [])
+    }, []);
 
     const createAuthor = async (name) => {
         await axios.post('http://localhost:8000/api/author/new', name)
@@ -41,12 +42,12 @@ const AuthorForm = (props) => {
             })
     }
     const updateAuthor = async (name) => {
-        axios.post('http://localhost:8000/api/author/'+params.id, name)
+        axios.put('http://localhost:8000/api/author/'+params.id, name)
             .then(res => {
                 console.log("Response: ", res)
                 history.push('/')
             })
-            .catch(err=> console.log(err))
+                        
     }
     const onChangeHandler = (e) => {
         setName({
@@ -65,6 +66,7 @@ const AuthorForm = (props) => {
         }
         else if (formType === "update"){
             updateAuthor(name)
+            
         }
     }
 
@@ -72,7 +74,7 @@ const AuthorForm = (props) => {
         <div className='container text-center col-4'>
             <form onSubmit={onSubmitHandler}>
                 <div className='row mb-3'>
-                    <label htmlFor='name' className='col-2 col-form-label text-left'>Name:</label>
+                    <label htmlFor='name' className='col-3 col-form-label text-left'>Name: </label>
                     <div className='col-8'>
                         <input type="text" className="form-control" id="name" name="name" value={name.name}onChange={onChangeHandler} />
                         {(_.has(errorMessages, 'name')) && 
@@ -81,9 +83,9 @@ const AuthorForm = (props) => {
                     </div>
                 </div>
                 <div className='row'>
-                    <div className='col-4'>
-                        <Link to="/" className="btn btn-outline-dark mx-1">Cancel</Link>
-                        <input className='btn btn-success mx-1' type="submit" value={(formType === 'create') ? "Add" : "Edit"} />
+                    <div className='col-4 d-inline-flex'>
+                        <Link to="/" className="btn btn-outline-dark">Cancel</Link>
+                        <input className='btn btn-success mx-1' type="submit" value={(formType === 'create') ? "Add" : "Update"} />
                     </div>
                 </div>
             </form>
