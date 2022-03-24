@@ -54,7 +54,7 @@ const Main = (props) => {
                             <td>{item.salary}</td>
                             <td>{item.remote ? "yes" : "no"}</td>
                             <td>{item.numJobs}</td>
-                            <td><button className='btn btn-secondary btn-sm'>Edit</button> | <button onClick={()=>onDeleteHandler(item._id,i)} className='btn btn-danger btn-sm'>Delete</button></td>
+                            <td><Link to={`/jobs/${item._id}/edit`} className='btn btn-secondary btn-sm'>Edit</Link> | <button onClick={()=>onDeleteHandler(item._id,i)} className='btn btn-danger btn-sm'>Delete</button></td>
                             </tr>
                         })
                     }

@@ -20,7 +20,7 @@ function App() {
       <Route exact path="/jobs/:id">
         <SingleJob/>
       </Route>
-      <Route exact path="/jobs/:id">
+      <Route exact path="/jobs/:id/edit">
         <Update/>
       </Route>
       </Switch>
