@@ -14,13 +14,13 @@ function App() {
       <Route exact path="/">
         <Main/>
       </Route>
-      <Route exact path="/job/new">
+      <Route exact path="/jobs/create">
         <Create/>
       </Route>
-      <Route exact path="/job/:id">
+      <Route exact path="/jobs/:id">
         <SingleJob/>
       </Route>
-      <Route exact path="/job/:id">
+      <Route exact path="/jobs/:id">
         <Update/>
       </Route>
       </Switch>

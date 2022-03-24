@@ -20,7 +20,7 @@ const JobSchema = new mongoose.Schema({
     },
     color: {
         type: String,
-        default: "lightpink"
+        default: "gray"
     },
     numJobs: {
         type: Number,
