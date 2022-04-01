@@ -9,7 +9,7 @@ const Update = (props) => {
         name: "",
         description: "",
         price: null,
-        sensitive: false,
+        sensitive: (props),
         image: "",
         skinType: "",
         productLink: ""

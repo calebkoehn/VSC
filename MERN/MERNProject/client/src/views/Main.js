@@ -44,9 +44,11 @@ const Main = (props) => {
                         products.map((item, i) => {
                             return <tr key={i}>
                             <td><Link to={`/products/${item._id}`}>{item.name}</Link></td>
-                            <td>{item.image}</td>
+                            <div className='w-25 p-3 mx-auto'>
+                                <img src={item.image} className='mw-100' />
+                            </div>
                             <td>{item.sensitive ? "yes" : "no"}</td>
-                            <td><Link to={`/products/${item._id}/edit`} className='btn btn-secondary btn-sm'>Edit</Link> | <button onClick={()=>onDeleteHandler(item._id,i)} className='btn btn-danger btn-sm'>Delete</button></td>
+                            <td><Link to={`/products/${item._id}/edit`} className='btn btn-secondary btn-sm'>Edit</Link> <button onClick={()=>onDeleteHandler(item._id,i)} className='btn btn-danger btn-sm'>Delete</button></td>
                             </tr>
                         })
                     }
