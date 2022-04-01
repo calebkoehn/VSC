@@ -13,14 +13,14 @@ function App() {
       <Route exact path="/">
         <Main/>
       </Route>
-      <Route exact path="/jobs/create">
+      <Route exact path="/products/create">
         <Create/>
       </Route>
-      <Route exact path="/jobs/:id">
+      <Route exact path="/products/:id">
         <SingleProduct/>
       </Route>
-      <Route exact path="/jobs/:id/edit">
-        <Update/>
+      <Route exact path="/products/:id/edit">
+        <Update />
       </Route>
       </Switch>
     </div>
