@@ -1,12 +1,10 @@
 
-Pirate Bay | Full-Stack Software Engineer 
+# Activity Center | Full-Stack Software Engineer 
+C#/ASP.NET Core-based app that is a hub for upcoming activities.
 
-A fun MERN project to categorize all of your favorite pirates with customizable features for each.
+Worked as the scrum master to facilitate an Agile working environment and promote greater depth and complexity.
 
+As the project's architect, Applied strong OOP properties to design clear, DRY data models.
 
+Created an engaging, responsive front-end using Bootstrap for a dynamic user experience.
 
-Leveraged speed of single-page app development in React.js for fast and seamless UX.
-
-Created a custom algorithm to sort your pirates based on several parameters such as when they were created or by alphabetical order.
-
-Developed back-end with Express framework and MongoDB for their flexible structure and ease of data access.
