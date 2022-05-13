@@ -1,4 +1,4 @@
-# TV Shows | Full-Stack Software Engineer 
+# TV Shows | Full-Stack Project
 A Python project where you can categorize all of your favorite shows and see relevant information about each.
 
 Designed the wireframe and workflow approach using Balsamiq and Shortcut.com for collaborative output.
