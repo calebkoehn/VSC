@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Basic13/Basic13.csproj": {}
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Basic13/Basic13.csproj": {}
   },
   "projects": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Basic13/Basic13.csproj": {
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Basic13/Basic13.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Basic13/Basic13.csproj",
+        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Basic13/Basic13.csproj",
         "projectName": "Basic13",
-        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Basic13/Basic13.csproj",
+        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Basic13/Basic13.csproj",
         "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Basic13/obj/",
+        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Basic13/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

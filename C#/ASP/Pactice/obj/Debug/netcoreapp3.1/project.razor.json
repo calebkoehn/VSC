@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/Pactice.csproj",
+  "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Pactice/Pactice.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,17 +14402,17 @@
   "RootNamespace": "Pactice",
   "Documents": [
     {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/Views/First/Submit.cshtml",
-      "TargetPath": "Views\\First\\Submit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/Views/First/Third.cshtml",
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Pactice/Views/First/Third.cshtml",
       "TargetPath": "Views\\First\\Third.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Pactice/Views/First/Index.cshtml",
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Pactice/Views/First/Submit.cshtml",
+      "TargetPath": "Views\\First\\Submit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Pactice/Views/First/Index.cshtml",
       "TargetPath": "Views\\First\\Index.cshtml",
       "FileKind": "mvc"
     }

@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/Portfolio2.csproj",
+  "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Portfolio2/Portfolio2.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,17 +14402,17 @@
   "RootNamespace": "Portfolio2",
   "Documents": [
     {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/Views/First/Contact.cshtml",
-      "TargetPath": "Views\\First\\Contact.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/Views/First/Index.cshtml",
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Portfolio2/Views/First/Index.cshtml",
       "TargetPath": "Views\\First\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/Portfolio2/Views/First/Project.cshtml",
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Portfolio2/Views/First/Contact.cshtml",
+      "TargetPath": "Views\\First\\Contact.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/Portfolio2/Views/First/Project.cshtml",
       "TargetPath": "Views\\First\\Project.cshtml",
       "FileKind": "mvc"
     }
