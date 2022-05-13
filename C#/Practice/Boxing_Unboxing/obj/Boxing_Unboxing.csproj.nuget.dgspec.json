@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj": {}
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj": {}
   },
   "projects": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj": {
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj",
+        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj",
         "projectName": "Boxing_Unboxing",
-        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj",
+        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Boxing_Unboxing/Boxing_Unboxing.csproj",
         "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Boxing_Unboxing/obj/",
+        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Boxing_Unboxing/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj": {}
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj": {}
   },
   "projects": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj": {
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj",
+        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj",
         "projectName": "Fundamentals1",
-        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj",
+        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Fundamentals1/Fundamentals1/Fundamentals1.csproj",
         "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/",
+        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Practice/Fundamentals1/Fundamentals1/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

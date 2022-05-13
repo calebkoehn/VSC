@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/GameDemo/GameDemo.csproj": {}
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/GameDemo/GameDemo.csproj": {}
   },
   "projects": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/GameDemo/GameDemo.csproj": {
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/GameDemo/GameDemo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/GameDemo/GameDemo.csproj",
+        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/GameDemo/GameDemo.csproj",
         "projectName": "GameDemo",
-        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/GameDemo/GameDemo.csproj",
+        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/GameDemo/GameDemo.csproj",
         "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/GameDemo/obj/",
+        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/GameDemo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

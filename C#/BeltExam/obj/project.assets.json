@@ -907,11 +907,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/BeltExam.csproj",
+      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/BeltExam/BeltExam.csproj",
       "projectName": "BeltExam",
-      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/BeltExam.csproj",
+      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/BeltExam/BeltExam.csproj",
       "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/BeltExam/obj/",
+      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/BeltExam/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

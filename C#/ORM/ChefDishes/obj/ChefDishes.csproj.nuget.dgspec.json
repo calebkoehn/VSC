@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/ChefDishes.csproj": {}
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/ChefDishes/ChefDishes.csproj": {}
   },
   "projects": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/ChefDishes.csproj": {
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/ChefDishes/ChefDishes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/ChefDishes.csproj",
+        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/ChefDishes/ChefDishes.csproj",
         "projectName": "ChefDishes",
-        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/ChefDishes.csproj",
+        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/ChefDishes/ChefDishes.csproj",
         "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/ChefDishes/obj/",
+        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/ChefDishes/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

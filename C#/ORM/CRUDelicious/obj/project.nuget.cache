@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yT4W6zvbkNDUWXa1DWH9T+z3SXkKhCIwTcWAFEn3yxmXIgd0PYAtDH/uJAIJpFRD8Q8kF4Dw8NFwWntXbDZPYQ==",
+  "dgSpecHash": "mH3TVwOGvnJttQs+fd+JRFXM5um4laiKTbNaySOcFFoW5+SWepK091ZhVlY/FcZwP7pTDnCh0Hls5DJsrrEbTA==",
   "success": true,
-  "projectFilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/CRUDelicious/CRUDelicious.csproj",
+  "projectFilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/CRUDelicious/CRUDelicious.csproj",
   "expectedPackageFiles": [
     "/Users/calebkoehn/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/calebkoehn/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
