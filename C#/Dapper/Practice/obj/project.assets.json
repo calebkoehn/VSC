@@ -105,7 +105,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Dapper >= *"
+      "Dapper >= 2.0.123"
     ]
   },
   "packageFolders": {
@@ -114,11 +114,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Dapper/Practice/Practice.csproj",
+      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Dapper/Practice/Practice.csproj",
       "projectName": "Practice",
-      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Dapper/Practice/Practice.csproj",
+      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Dapper/Practice/Practice.csproj",
       "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Dapper/Practice/obj/",
+      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Dapper/Practice/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"
@@ -145,7 +145,7 @@
         "dependencies": {
           "Dapper": {
             "target": "Package",
-            "version": "[*, )"
+            "version": "[2.0.123, )"
           }
         },
         "imports": [

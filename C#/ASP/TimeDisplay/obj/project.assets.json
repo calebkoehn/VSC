@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/TimeDisplay.csproj",
+      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/TimeDisplay/TimeDisplay.csproj",
       "projectName": "TimeDisplay",
-      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/TimeDisplay.csproj",
+      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/TimeDisplay/TimeDisplay.csproj",
       "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/TimeDisplay/obj/",
+      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/TimeDisplay/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

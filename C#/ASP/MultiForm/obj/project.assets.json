@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/MultiForm/MultiForm.csproj",
+      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/MultiForm/MultiForm.csproj",
       "projectName": "MultiForm",
-      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/MultiForm/MultiForm.csproj",
+      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/MultiForm/MultiForm.csproj",
       "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/MultiForm/obj/",
+      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/MultiForm/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "l3ykhIeQjxsWfzKTK1vJgzLUmT0iYD2fR2d7nUbsUxUvbxewIvjzgo4/r9Y/y0f/KLlzi7GfxILHwjU9lUtaJA==",
+  "dgSpecHash": "My1vRIc9VKzyjIZrQKiz9ssYgiMFpbUKRJypMwdrsJE/0edwB+t9SJIV4mhqi1qAFYz1vHuznk9RnG+kF4Fxaw==",
   "success": true,
-  "projectFilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/Project/Project.csproj",
+  "projectFilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/Project/Project.csproj",
   "expectedPackageFiles": [
     "/Users/calebkoehn/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/calebkoehn/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

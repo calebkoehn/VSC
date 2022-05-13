@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/ViewModel.csproj",
+      "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/ViewModel/ViewModel.csproj",
       "projectName": "ViewModel",
-      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/ViewModel.csproj",
+      "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/ViewModel/ViewModel.csproj",
       "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ASP/ViewModel/obj/",
+      "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ASP/ViewModel/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

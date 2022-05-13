@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj": {}
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj": {}
   },
   "projects": {
-    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj": {
+    "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj",
+        "projectUniqueName": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj",
         "projectName": "Wizard_Ninja_Samurai",
-        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj",
+        "projectPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/Wizard_Ninja_Samurai.csproj",
         "packagesPath": "/Users/calebkoehn/.nuget/packages/",
-        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/obj/",
+        "outputPath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/C#_OOP/Wizard_Ninja_Samurai/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/calebkoehn/.nuget/NuGet/NuGet.Config"

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8QP/qF2OT0pKVLI67V65zsfHoXR9SSMWRSXrI9Xj+fTgldDAvQ+TbsvZXw0fJje4PnHo+1p60jBxMFEq+rMNKA==",
+  "dgSpecHash": "q4/jWazg2EE13wsfU7j5UoiViuDt2YdvNmQ8lRpijY6y8dxG8H4v13ZHP2pSFnvG+oCCfiVoNQu8ylld77EvSQ==",
   "success": true,
-  "projectFilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/VSC/C#/ORM/LoginRegistration/LoginRegistration.csproj",
+  "projectFilePath": "/Users/calebkoehn/Library/CloudStorage/OneDrive-Personal/Dojo/VSC/C#/ORM/LoginRegistration/LoginRegistration.csproj",
   "expectedPackageFiles": [
     "/Users/calebkoehn/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/calebkoehn/.nuget/packages/microsoft.bcl.hashcode/1.1.0/microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
