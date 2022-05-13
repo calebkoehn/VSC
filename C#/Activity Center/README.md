@@ -1,5 +1,5 @@
 
-# Activity Center | Full-Stack Software Engineer 
+# Activity Center | Full-Stack Project
 C#/ASP.NET Core-based app that is a hub for upcoming activities.
 
 Worked as the scrum master to facilitate an Agile working environment and promote greater depth and complexity.
